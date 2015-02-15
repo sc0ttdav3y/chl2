@@ -2,27 +2,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
 		<title>Basic Components</title>
-		<link rel="stylesheet" type="text/css" href="css/core.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chl2_w_subNode.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chl2_w_comment.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chl2_w_compactNews.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chl2_w_compactEvent.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chl2_w_sitemap.css"/>
+		<link rel="stylesheet" type="text/css" href="site.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/core.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/chl2_w_subNode.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/chl2_w_comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/chl2_w_compactNews.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/chl2_w_compactEvent.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/chl2_w_latestNews.css"/>
+		<link rel="stylesheet" type="text/css" href="chl_theme.css"/>
 		
 		<style type="text/css">
-			body {
-				margin:auto;
-				width:60%;
+			.annotate {
+				margin:1em 0;
+				padding:0.5em 1em;
+				background-color:#F2E291;
 			}
 		</style>
-		
+	
 	</head>
 	<body>
 	<div class="content">
-		<!-- Paste all of these lines into the content DIV -->
+		
+		<a href="../../../index.html">Back to CHL index</a>
+		
 		<h1>Basic CHL components</h1>
-				
-		<h2>Text styles</h2>
+		<p class="annotate">This document in conjunction with <a href="chl_theme.css">chl_theme.css</a> describes how to add basic styling to the CHL. Developers should refer to <a href="../../chl_developerGuide.html">chl_developerGuide.html.</a></p>
+
+		<h2 id="a_basicTextStyles">Text styles</h2>
+		
+		<p class="annotate">Text styles are the most basic element covered by the CHL. Styles should be defined for H1, H2, H3, H4 and paragraphs. It is recommended that font-family, a default font-size and line-height are specified in your site style, preferably applied to the body tag. Refer to <a href="site.css">site.css</a> used by this example.</p>
+
 		
 		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
 		<p>This is a paragraph. Suspendisse euismod eleifend lectus. Aliquam id tellus. Etiam enim arcu, molestie a, congue ac, vulputate vitae, augue. Sed dapibus iaculis justo. Sed mauris nisi, egestas id, tincidunt non, accumsan sed, purus. Nulla facilisi. Donec in urna cursus lacus auctor condimentum. Etiam convallis, pede quis placerat sagittis, felis sem faucibus leo, in elementum neque diam in tellus. Sed mi lorem, sodales at, lacinia quis, scelerisque in, sapien. Maecenas nibh. Aliquam quis est. Donec lacinia tortor non nisl. Ut ac orci. Nulla facilisi. Proin a erat at tellus facilisis adipiscing. Maecenas ultrices adipiscing arcu. </p>
@@ -39,12 +48,13 @@
 		<h4>Heading level four</h4>
 		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
 		
+				
 		Text can be <strong>bold</strong> or <i>italic</i>.
+				
+		<h2 id="a_verticalList">Vertical List</h2>
 		
-		<blockquote>This is a block quote. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus.</blockquote>
-		
-		<h2>Lists</h2>
-		
+		<p class="annotate">Default list styles have been set in <a href="site.css">site.css</a>.</p>
+
 		<h3>Unordered list</h3>
 		<ul>
 			<li>List item 1</li>
@@ -71,7 +81,7 @@
 			<li>List item</li>
 		</ol>
 		
-		<h3>Horizontal list</h3>
+		<h3 id="a_horizontalList">Horizontal list</h3>
 		<!-- widget start -->
 		<ul class="chl2_horizontalList">
 			<li>List item one</li>
@@ -81,9 +91,9 @@
 			<li class="chl2_last">List item five</li>
 		</ul>
 		<!-- widget end -->
-		
-		<h3>Horizontal list of links</h3>
-		
+
+		<p class="annotate">A horizontal list of hyperlinks.</p>
+
 		<!-- widget start -->
 		<ul class="chl2_horizontalList">
 			<li><a href="#">List item one</a></li>
@@ -93,88 +103,64 @@
 			<li class="chl2_last"><a href="#">List item five</a></li>
 		</ul>
 		<!-- widget end -->
+
+		<h2 id="a_pageLayoutStyles">Page layout styles</h2>
 		
+		<p class="annotate">A page can be divided into columns using the page layout styles.</p>
+		
+		<!-- widget start -->
+		<div class="chl2_page_wrapper chl2_page_2Column">
+			<div class="chl2_page_column chl2_left">
+				<div class="chl2_panel">
+					<div class="chl2_wrapper">
+						<div class="chl2_header"></div>
+						<div class="chl2_body">
+							<p>A panel widget inside the left column of a two column layout.</p>
+						</div>
+						<div class="chl2_footer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chl2_page_column chl2_right">
+				<div class="chl2_panel">
+					<div class="chl2_wrapper">
+						<div class="chl2_header"></div>
+						<div class="chl2_body">
+							<p>A panel widget inside the right column of a two column layout.</p>
+						</div>
+						<div class="chl2_footer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chl2_clear"></div>
+		</div>
+		<!-- widget end -->
+		<br/>
+		<!-- widget start -->
+		<div class="chl2_panel">
+			<div class="chl2_wrapper">
+				<div class="chl2_header"></div>
+				<div class="chl2_body">
+					<p>A panel widget outside of the two column layout.</p>
+				</div>
+				<div class="chl2_footer"></div>
+			</div>
+		</div>
+		<!-- widget end -->
+
 		<h2>Link styles</h2>
 		
-		<h3>chl2_addLink</h3>
+		<p class="annotate">The CHL uses a number of link styles. Each link style has a corresponding image, which can be changed or moved. In this example the image used by <i>chl2_addLink</i> has been changed and moved to the right. The same approach can be applied to all other link styles.</p>
+		
+		<h3 id="a_chl2_addLink">chl2_addLink</h3>
 		
 		<!-- widget start -->
 		<a class="chl2_addLink" href="#">Add</a>
 		<!-- widget end -->
+
+		<h2 id="a_alertsAndSystemMessages">Alerts and system messages</h2>
 		
-		<h3>chl2_removeLink</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_removeLink" href="#">Remove</a>
-		<!-- widget end -->
-		
-		<h3>chl2_externalLink</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_externalLink" href="#">External</a>
-		<!-- widget end -->
-		
-		<h3>chl2_fileLink</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_fileLink" href="#">Download</a>
-		<!-- widget end -->
-		
-		<h3>chl2_rss</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_rss" href="#">RSS</a>
-		<!-- widget end -->
-		
-		<h3>chl2_action</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_action" href="#">Action</a>
-		<!-- widget end -->
-		
-		<h3>chl2_next</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_next" href="#">Next</a>
-		<!-- widget end -->
-		
-		<h3>chl2_previous</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_previous" href="#">Previous</a>
-		<!-- widget end -->
-				
-		<h3>chl2_nextInactive</h3>
-		
-		<!-- widget start -->
-		<span class="chl2_nextInactive">Next</span>
-		<!-- widget end -->
-		
-		<h3>chl2_previousInactive</h3>
-		
-		<!-- widget start -->
-		<span class="chl2_previousInactive">Previous</span>
-		<!-- widget end -->
-		
-		<h3>chl2_sortUp</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_sortUp" href="#">Sort up</a>
-		<!-- widget end -->
-		
-		<h3>chl2_sortDown</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_sortDown" href="#">Sort down</a>
-		<!-- widget end -->
-		
-		<h3>chl2_minorLink</h3>
-		
-		<!-- widget start -->
-		<a class="chl2_minorLink" href="#">Minor link</a>
-		<!-- widget end -->
-		
-		<h2>Alerts and system messages</h2>
+		<p class="annotate">This example shows how to modify the appearance of system messages. The same approach could be used with the error and success message styles.</p>
 		
 		<!-- widget start -->
 		<div class="chl2_systemMessage">
@@ -189,53 +175,18 @@
 			</div>
 		</div>
 		<!-- widget end -->
-		
-		<!-- widget start -->
-		<div class="chl2_systemMessage">
-			<div class="chl2_error">
-				<h6>Error</h6>
-				<ul>
-					<li>List item one</li>
-					<li>List item two</li>
-					<li>List item three</li>
-					<li>List item four</li>
-				</ul>
-			</div>
-		</div>
-		<!-- widget end -->
-		
-		<!-- widget start -->
-		<div class="chl2_systemMessage">
-			<div class="chl2_success">
-				<h6>Success</h6>
-				<ul>
-					<li>List item one</li>
-					<li>List item two</li>
-					<li>List item three</li>
-					<li>List item four</li>
-				</ul>
-			</div>
-		</div>
-		<!-- widget end -->
-		
-		<!-- widget start -->
-		<div class="chl2_systemMessage">
-			<div class="chl2_information">
-				<h6>Information</h6>
-				Information message.
-			</div>
-		</div>
-		<!-- widget end -->
-		
-		
-		<h2>Panel</h2>
-				
+
+
+		<h2 id="a_panel">Panel</h2>
+
+		<p class="annotate">The panel is built using four DIVs. This example shows how to add rounded corners while maintaining a fluid width and height.</p>
+
 		<!-- widget start -->
 		<div class="chl2_panel">
 			<div class="chl2_wrapper">
 				<div class="chl2_header"></div>
 				<div class="chl2_body">
-				This is a panel.
+				This is a panel. Fusce ac quam. Morbi leo dui, pulvinar sed, commodo sed, molestie at, enim. Phasellus aliquam rutrum tortor. Fusce turpis erat, malesuada gravida, dignissim in, aliquam id, neque. Ut interdum eleifend enim. Etiam sit amet quam a justo mattis imperdiet.
 				</div>
 				<div class="chl2_footer"></div>
 			</div>
@@ -244,7 +195,9 @@
 		
 		<h2>Row collections</h2>
 		
-		<h3>One column</h3>
+		<p class="annotate">The following components consist of a collection of rows. Each row has a class of <i>chl2_odd</i> or <i>chl2_even</i> to allow alternating row colours (or in this case backgrounds) to be applied.</p>
+		
+		<h3 id="a_oneColumn">One column</h3>
 		
 		<!-- widget start -->
 		<div class="chl2_rowCollection">
@@ -269,8 +222,8 @@
 		</div>
 		<!-- widget end -->
 		
-		<h3>Two column</h3>
-		
+		<h3 id="a_twoColumn">Two column</h3>
+
 		<!-- widget start -->
 		<div class="chl2_rowCollection chl2_2Column">
 			<div class="chl2_row chl2_odd">
@@ -317,7 +270,10 @@
 		</div>
 		<!-- widget end -->
 		
-		<h3>Two column with heading</h3>
+		<h3 id="a_twoColumnWithHeading">Two column with heading</h3>
+		
+		<p class="annotate">This widget uses H6 headings to give each row a title. A class of <i>chl2_title</i> allows the headings to be styled indepently of other H6 headings.</p>
+		
 		<!-- widget start -->
 		<div class="chl2_rowCollection chl2_2Column chl2_title">
 			<div class="chl2_row">
@@ -346,9 +302,11 @@
 			</div>
 		</div>
 		<!-- widget end -->
-		
-		<h2>Paginated data</h2>
-		
+
+		<h2 id="a_paginatedData">Paginated data</h2>
+
+		<p class="annotate">In this example, the paginated data widget only required the border colour to be changed.</p>
+
 		<!-- widget starts -->
 		<div class="chl2_paginatedSet">
 			<div class="chl2_header">
@@ -399,7 +357,9 @@
 		</div>
 		<!-- widget ends -->
 		
-		<h2>Tab set</h2>
+		<h2 id="a_tabSet">Tab set</h2>
+		
+		<p class="annotate">Background images have been used for more complex styling.</p>
 		
 		<!-- widget starts -->
 		<div class="chl2_tabSet">
@@ -420,8 +380,10 @@
 		</div>
 		<!-- widget ends -->
 		
-		<h2>Tables</h2>
-		
+		<h2 id="a_table">Tables</h2>
+
+		<p class="annotate">CHL uses tables to display complex tabular data. The concept of <i>chl2_odd</i> and <i>chl2_even</i> also applies.</p>
+
 		<!-- widget starts -->
 		<table class="chl2_table">
 			<tr>
@@ -449,7 +411,9 @@
 		
 		<h2>Widgets</h2>
 		
-		<h3>Further information</h3>
+		<p class="annotate">Widget uses the basic CHL building blocks described above. As a result, only a small amount of additional styling is required.</p>
+		
+		<h3 id="a_furtherInformation">Further information</h3>
 		
 		<!-- widget start -->
 		<div class="chl2_w_subNode">
@@ -481,8 +445,8 @@
 			</div>
 		</div>
 		<!-- widget end -->
-		
-		<h3>Comments</h3>
+				
+		<h3 id="a_comments">Comments</h3>
 		
 		<!-- widget starts -->
 		<div class="chl2_w_comment">
@@ -509,272 +473,170 @@
 		</div>
 		<!-- widget ends -->
 		
-		<h2>Page layouts</h2>
-
-		<!-- widget start -->
-		<div class="chl2_page_wrapper chl2_page_2Column">
-			<div class="chl2_page_column chl2_left">
-				<div class="chl2_panel">
-					<div class="chl2_wrapper">
-						<div class="chl2_header"></div>
-						<div class="chl2_body">
-							<p>A panel widget inside the left column of a two column layout.</p>
+		<h3 id="a_latestNewsWidget">Latest news widget</h3>
+		
+		<!-- widget starts -->
+		<div class="chl2_w_latestNews">
+			<div class="chl2_2Column">
+				<div class="chl2_left">
+					<div class="chl2_imageTextGroup">
+						<div class="chl2_image">
+							<a href="#"><img src="images/news_temp_large.jpg" /></a>
 						</div>
-						<div class="chl2_footer"></div>
+						<div class="chl2_text">
+							<h5><a href="#">New Wyndham Mayor Breaks Record</a></h5>
+							<span class="chl2_date">12.12.2008</span>
+							Wyndham Council has elected Chaffey Ward Councillor Shane Bourke as Mayor for a record fifth term.
+							<br/>
+							<br/>
+							Cr Bourke was elected at the Meeting of Council held on Wednesday 10 December, with Iramoo Ward Councillor Heather Marcus elected as Deputy Mayor.
+						</div>
+						<div class="chl2_clear"></div>
 					</div>
 				</div>
-			</div>
-			<div class="chl2_page_column chl2_right">
-				<div class="chl2_panel">
-					<div class="chl2_wrapper">
-						<div class="chl2_header"></div>
-						<div class="chl2_body">
-							<p>A panel widget inside the right column of a two column layout.</p>
+				<div class="chl2_right">
+					<div class="chl2_rowCollection">
+						<div class="chl2_row chl2_odd chl2_first">
+							<div class="chl2_imageTextGroup">
+								<div class="chl2_image">
+									<a href="#"><img src="images/news_temp_medium.jpg" /></a>
+								</div>
+								<div class="chl2_text">
+									<h6><a href="#">Article Title</a></h6>
+									<span class="chl2_date">12.12.2008</span>
+									This is the summary text for the article. By default it does not wrap under the image.
+								</div>
+								<div class="chl2_clear"></div>
+							</div>
 						</div>
-						<div class="chl2_footer"></div>
+						<div class="chl2_row chl2_even">
+							<div class="chl2_imageTextGroup">
+								<div class="chl2_image">
+									<a href="#"><img src="images/news_temp_medium.jpg" /></a>
+								</div>
+								<div class="chl2_text">
+									<h6><a href="#">Article Title</a></h6>
+									<span class="chl2_date">12.12.2008</span>
+									This is the summary text for the article. By default it does not wrap under the image.
+								</div>
+								<div class="chl2_clear"></div>
+							</div>
+						</div>
+						<div class="chl2_row chl2_odd">
+							<div class="chl2_imageTextGroup">
+								<div class="chl2_image">
+									<a href="#"><img src="images/news_temp_medium.jpg" /></a>
+								</div>
+								<div class="chl2_text">
+									<h6><a href="#">Article Title</a></h6>
+									<span class="chl2_date">12.12.2008</span>
+									This is the summary text for the article. By default it does not wrap under the image.
+								</div>
+								<div class="chl2_clear"></div>
+							</div>
+						</div>
+						<div class="chl2_row chl2_odd chl2_last">
+							<a class="chl2_rss" href="#">Latest News RSS</a>
+						</div>
 					</div>
 				</div>
+				<div class="chl2_clear"></div>
 			</div>
-			<div class="chl2_clear"></div>
 		</div>
-		<!-- widget end -->
-		<br/>
-		<!-- widget start -->
-		<div class="chl2_panel">
+		<!-- widget ends -->
+		
+		<h3 id="a_compactNewsWidget">Compact news widget</h3>
+		
+		<!-- widget starts -->
+		<div class="chl2_w_compactNews chl2_panel">
 			<div class="chl2_wrapper">
 				<div class="chl2_header"></div>
 				<div class="chl2_body">
-					<p>A panel widget outside of the two column layout.</p>
+					<div class="chl2_2Column">
+						<div class="chl2_left">
+							<div class="chl2_imageTextGroup">
+								<div class="chl2_image">
+									<a href="#"><img src="images/news_temp_small.jpg" /></a>
+								</div>
+								<div class="chl2_text">
+									<h6><a href="#">News Article Title</a></h6>
+									<span class="chl2_date">12.12.2008</span>
+									Sed facilisis, nibh sit amet interdum consectetur, magna eros congue justo, ac ultrices urna lorem. Mauris ut ligula fermentum volutpat arcu.
+								</div>
+								<div class="chl2_clear"></div>
+							</div>
+						</div>
+						<div class="chl2_right">
+							<div class="chl2_rowCollection">
+								<div class="chl2_row">
+									<span class="chl2_date">12.12.2008</span>
+									<a href="#">Praesent pulvinar condimentum nunc</a>
+								</div>
+								<div class="chl2_row">
+									<span class="chl2_date">12.12.2008</span>
+									<a href="#">Ut volutpat arcu sit amet nisl</a>
+								</div>
+								<div class="chl2_row">
+									<span class="chl2_date">03.11.2008</span>
+									<a href="#">Mauris ut ligula fermentum</a>
+								</div>
+								<div class="chl2_row chl2_last">
+									<a href="#" class="chl2_rss">RSS</a>&nbsp;|&nbsp;<a href="#" class="chl2_action">More News for Residents</a>
+								</div>
+							</div>
+						</div>
+						<div class="chl2_clear"></div>
+					</div>
 				</div>
 				<div class="chl2_footer"></div>
 			</div>
 		</div>
-		<!-- widget end -->
-		
-		<h2>Forms</h2>
-		
-		<!-- example form -->
-		<form class="chl2_form" action="#">
-			<fieldset>
-				<legend>Form elements</legend>
-				
-				<!-- textbox -->
-				<div class="chl2_formItem">
-					<label>Textbox</label>
-					<span class="chl2_field">
-						<input class="chl2_textbox" type="text" />
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
+		<!-- widget ends -->
 
-				<!-- password -->
-				<div class="chl2_formItem">
-					<label>Password</label>
-					<span class="chl2_field">
-						<input class="chl2_textbox chl2_password" type="password" />
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-				<!-- textarea -->
-				<div class="chl2_formItem">
-					<label>Textarea</label>
-					<span class="chl2_field">
-						<textarea class="chl2_textarea"></textarea>
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-				<!-- select box -->
-				<div class="chl2_formItem">
-					<label>Select</label>
-					<span class="chl2_field">
-						<select class="chl2_select">
-							<option>Option one</option>
-							<option>Option two</option>
-							<option>Option three</option>								
-						</select>
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-				<!-- multiple select box -->
-				<div class="chl2_formItem">
-					<label>Multiple select</label>
-					<span class="chl2_field">
-						<select class="chl2_multipleSelect" multiple="multiple">    
-							<option value="one">Option one</option>
-							<option value="two">Option two</option>
-							<option value="three">Option three</option> 
-						</select>
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-				<!-- file upload -->
-				<div class="chl2_formItem">
-					<label>File upload</label>
-					<span class="chl2_field">
-						<input class="chl2_fileUpload" type="file" />
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
+		
+		<h3 id="a_compactEventWidget">Compact event widget</h3>
 
-				<!-- radio button group -->
-				<div class="chl2_formItem">
-					<label>Radio button choice</label>
-					<span class="chl2_field">
-						<!-- radio button and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_radio" type="radio" />
-							<label>Radio button choice one</label>
-						</span>
-						
-						<!-- radio button and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_radio" type="radio" />
-							<label>Radio button choice two</label>
-						</span>
-						
-						<!-- radio button and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_radio" type="radio" />
-							<label>Radio button choice three</label>
-						</span>
-							
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-				<!-- checkbox group -->
-				<div class="chl2_formItem">
-					<label>Checkbox choice</label>
-					<span class="chl2_field">
-						<!-- checkbox and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_checkbox" type="checkbox" />
-							<label>Checkbox choice one</label>
-						</span>
-						
-						<!-- checkbox and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_checkbox" type="checkbox" />
-							<label>Checkbox choice two</label>
-						</span>
-						
-						<!-- checkbox and label -->
-						<span class="chl2_labelledField">
-							<input class="chl2_checkbox" type="checkbox" />
-							<label>Checkbox choice three</label>
-						</span>
-							
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				
-			</fieldset>
-		
-			<fieldset>
-				<legend>Your details</legend>
-				<div class="chl2_formItem">
-					<label>First name</label>
-					<span class="chl2_field">
-						<input class="chl2_textbox" type="text" />
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				<div class="chl2_formItem">
-					<label>Last name</label>
-					<input class="chl2_textbox" type="text" />
-					<div class="chl2_clear"></div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>More details</legend>
-				<div class="chl2_formItem chl2_required chl2_error">
-					<label>Field one <span>*</span></label>
-					<span class="chl2_field">
-						<input class="chl2_textbox" type="text" />
-					</span>
-					<div class="chl2_clear"></div>
-					<span class="chl2_validationMessage">Please enter field one.</span>
-				</div>
-				<div class="chl2_formItem chl2_required">
-					<label>Field two <span>*</span></label>
-					<span class="chl2_field">
-						<input class="chl2_textbox" type="text" value="Field two" />
-					</span>
-					<div class="chl2_clear"></div>
-				</div>
-				<div class="chl2_formItem chl2_required chl2_error">
-					<label>Field three <span>*</span></label>
-					<span class="chl2_field">
-						<textarea class="chl2_textarea"></textarea>
-					</span>
-					<div class="chl2_clear"></div>
-					<span class="chl2_validationMessage">
-						This is a longer validation message for field three.
-					</span>
-				</div>
-				<div class="chl2_formItem chl2_required">
-					<label>Date value <span>*</span></label>
-						<span class="chl2_field">
-							<select class="chl2_select"><option>25</option></select>
-							<select class="chl2_select"><option>May</option></select>
-							<select class="chl2_select"><option>1984</option></select>
-						</span>
-						<a href="#" class="chl2_formHelp"><span>Help</span></a>
-					<div class="chl2_clear"></div>
-				</div>
-			</fieldset>
-			<!-- button -->
-			<input class="chl2_button" type="submit" value="Button" />
-			<!-- minor button -->
-			<input class="chl2_minorButton" type="submit" value="Minor Button" />
-			<!-- major button -->
-			<input class="chl2_majorButton" type="submit" value="Major Button" />
-		</form>
-		<!-- example form ends -->
-		
-		<h2>Sitemap</h2>
 		<!-- widget starts -->
-		<div class="chl2_w_sitemap">
-			<h5><a href="#">Top level node</a></h5>
-			<ul>
-				<li><a href="#">Sub-page</a></li>
-				
-				<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
-					<ul>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>					
-						<li class="chl2_last"><a href="#">Child of sub-page</a></li>
-					</ul>
-				</li>	
-			</ul>
-			<h5><a href="#">Top level node</a></h5>
-			<ul>
-				<li><a href="#">Sub-page</a></li>
-				
-				<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
-					<ul>
-						<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-						<li class="chl2_last"><a href="#">Child of sub-page</a></li>
-					</ul>
-				</li>	
-			</ul>
+		<div class="chl2_w_compactEvent chl2_panel">
+			<div class="chl2_wrapper">
+				<div class="chl2_header"></div>
+				<div class="chl2_body">
+					<div class="chl2_2Column">
+						<div class="chl2_left">
+							<div class="chl2_imageTextGroup">
+								<div class="chl2_image">
+									<a href="#"><img src="images/event_temp_small.jpg" /></a>
+								</div>
+								<div class="chl2_text">
+									<h6><a href="#">Featured Event</a></h6>
+									<div class="chl2_date">14.12.2008 &#8211; 20.12.2008</div>
+									Sed facilisis, nibh sit amet interdum consectetur, magna eros congue justo, ac ultrices urna lorem. Mauris ut ligula fermentum volutpat arcu.
+								</div>
+								<div class="chl2_clear"></div>
+							</div>
+						</div>
+						<div class="chl2_right">
+							<div class="chl2_rowCollection">
+								<div class="chl2_row">
+									<a href="#">Praesent pulvinar condimentum nunc</a>
+									<div class="chl2_date">12.12.2008 &#8211; 14.12.2008</div>
+								</div>
+								<div class="chl2_row">
+									<a href="#">Ut volutpat arcu sit amet nisl</a>
+									<div class="chl2_date">12.12.2008</div>
+								</div>
+								<div class="chl2_row chl2_last">
+									<a class="chl2_action" href="#">Events Calendar</a>
+								</div>
+							</div>
+						</div>
+						<div class="chl2_clear"></div>
+					</div>
+				</div>
+				<div class="chl2_footer"></div>
+			</div>
 		</div>
 		<!-- widget ends -->
-		
-		</div>
+	</div>
 	</body>
 </html>

@@ -1,0 +1,50 @@
+/* chl2_w_subNodeList.css */
+
+/* Styles for the subNode (list view) widget. This file relies on core.css */
+
+/*
+Usage:
+<div class="chl2_w_subNodeList">
+	<div class="chl2_wrapper">
+		<div class="chl2_header"></div>
+		<ul>
+			<li>
+				<a href="#">Link to subnode one</a>
+				<br/>
+				This is the summary text for subnode one.
+			</li>
+			<li>
+				<a href="#">Link to subnode two</a>
+				<br/>
+				This is the summary text for subnode two.
+			</li>
+			<li>
+				<a href="#">Link to subnode three</a>
+				<br/>
+				This is the summary text for subnode three.
+			</li>
+			<li class="chl2_last">
+				<a href="#">Link to subnode four</a>
+				<br/>
+				This is the summary text for subnode four.
+			</li>
+		</ul>
+		<div class="chl2_footer"></div>
+	</div>
+</div>
+*/
+
+/* NOTE: the h5 can placed above the widget or in the header */
+
+.chl2_w_subNodeList {
+	padding:0.5em;
+	height:1%; /* ie fix */
+	background-color:#eee;
+}
+
+.chl2_w_subNodeList ul {
+	margin-top:0;
+	margin-bottom:0;
+	padding-top:0;
+	padding-bottom:0;
+}

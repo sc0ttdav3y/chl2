@@ -151,17 +151,22 @@
 			
 			<h2>How do I implement CHL?</h2>
 			
-			<p>Getting started with CHL is easy. The simplest implementation requires the addition of core.min.css to your project. An example implementation is shown below.</p>
+			<p>Getting started with CHL is easy. The simplest implementation requires the addition of core.css to your project. An example implementation is shown below.</p>
 			
 			<div class="exampleCode">
 				<ol>
-					<li><span class="highlight">&lt;link rel="stylesheet" type="text/css" media="screen" href="core.min.css" /&gt;</span></li>
 					<li><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="my_site_style.css" /&gt;</span></li>
+					<li><span class="highlight">&lt;link rel="stylesheet" type="text/css" media="screen" href="core.css" /&gt;</span></li>
+					<li><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="chl2_w_subNode.css" /&gt;</span></li>
+					<li><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="chl2_w_comment.css" /&gt;</span></li>
+					<li><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="chl2_w_compactNews.css" /&gt;</span></li>
+					<li><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="chl2_w_compactEvent.css" /&gt;</span></li>
+					<li class="last"><span>&lt;link rel="stylesheet" type="text/css" media="screen" href="chl_theme.css" /&gt;</span></li>
 				</ol>
 			</div>
 		
-			<p>The first style-sheet should be core.min.css. This file contains all of the basic styles required by CHL. The second style-sheet describes the project's layout and visual style. For the most part, its name and internal structure are independent of CHL. If you need to customise the appearance of CHL add the necessary code to this file. Site.css (in the CSS) directory provides a good starting point for customising CHL.</p>
-			<p class="annotate">Note: Do not modify core.min.css. Custom CHL styles are defined in your site's CSS file.</p>
+			<p>The first style-sheet (line 1) describes the project's layout and visual style. Its name and internal structure are independent of CHL. The next style-sheet should be core.css (line 2). This file contains all of the basic styles required by CHL. If additional widgets are required their style-sheets should also be included (lines 3 to 6). The final style-sheet included is chl_theme.css (line 7). This style-sheet allows the appearance of CHL components to be customised.</p>
+			<p class="annotate">Note: Do not modify core.css or the widget style-sheets. Custom CHL styles are defined in chl_theme.css (line 7).</p>
 		
 			<p class="annotate"><strong>Important:</strong> Do not include any fs_ stylesheets in your project. These are obsolete and their resets will overide CHL. If you need to update an old project, keep in mind that the fs_ stylesheets may cause unexpected results (in particular fs_text.css and fs_theme.css).</p>
 		
@@ -177,19 +182,6 @@
 			<p>Copy the code from <a href="chl_testCode.html">chl_testCode.html</a> and paste the entire contents between the newly created content DIV.</p>
 			
 			<p>You are now ready to test and style the CHL components. Refer to <a href="../index.html">index.html</a> for documentation and examples.</p>
-			
-			<h2>How do I style CHL?</h2>
-					
-			<ul>
-				<li>An example site.css file is included in the css directory. You can copy and paste this file to the end of your own site.css. The bulk resets make it the perfect starting point for customising CHL. The file also shows how to style the tab set (you will also need to include the images/ui directory).</li>
-			</ul>
-			
-			<h3>Examples</h3>
-			
-			<ul>
-				<li><a href="examples/genericSite/chl.html">Example 1</a> applies simple styling to the CHL.</li>
-			</ul>			
-			
 		</div>
 	</body>
 </html>

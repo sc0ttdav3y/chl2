@@ -1,0 +1,103 @@
+/* chl2_w_compactEvent.css */
+
+/* Styles for the compact event widget. This file relies on core.css */
+
+/*
+Usage:
+<div class="chl2_w_compactEvent chl2_panel">
+	<div class="chl2_wrapper">
+		<div class="chl2_header"></div>
+		<div class="chl2_body">
+			<div class="chl2_2Column">
+				<div class="chl2_left">
+					<div class="chl2_imageTextGroup">
+						<div class="chl2_image">
+							<a href="#">[image]</a>
+						</div>
+						<div class="chl2_text">
+							<h6><a href="#">[event title]</a></h6>
+							<div class="chl2_date">[event date]</div>
+							[content]
+						</div>
+						<div class="chl2_clear"></div>
+					</div>
+				</div>
+				<div class="chl2_right">
+					<div class="chl2_rowCollection">
+						<div class="chl2_row">
+							<a href="#">[event title]</a>
+							<div class="chl2_date">[date]</div>
+						</div>
+						<div class="chl2_row">
+							<a href="#">[event title]</a>
+							<div class="chl2_date">[date]</div>
+						</div>
+						<div class="chl2_row chl2_last">
+							<a class="chl2_action" href="#">[link to calendar...]</a>
+						</div>
+					</div>
+				</div>
+				<div class="chl2_clear"></div>
+			</div>
+		</div>
+		<div class="chl2_footer"></div>
+	</div>
+</div>
+*/
+
+.chl2_w_compactEvent {
+
+}
+
+.chl2_w_compactEvent h6 {
+	margin:0;
+	margin-top:0.25em;
+	padding:0;
+}
+
+.chl2_w_compactEvent .chl2_2Column {
+	padding:0.25em 0;
+	border-top:solid 1px #bcbcbc;
+	border-bottom:solid 1px #bcbcbc;
+	background:url('../images/chl/chl_2Column.gif') repeat-y 60% top;
+}
+
+.chl2_w_compactEvent .chl2_left {
+	width:60%;
+}
+
+.chl2_w_compactEvent .chl2_right {
+	width:40%;
+}
+
+.chl2_w_compactEvent .chl2_imageTextGroup {
+	padding-right:0.5em;
+}
+
+.chl2_w_compactEvent .chl2_image {
+	width:155px;
+	float:left;
+}
+
+.chl2_w_compactEvent .chl2_text {
+	margin-left:155px;
+	padding-left:1em;
+}
+
+.chl2_w_compactEvent .chl2_row {
+	margin-bottom:0.25em;
+}
+
+.chl2_w_compactEvent .chl2_row.chl2_last {
+	border:none;
+}
+
+
+.chl2_w_compactEvent .chl2_right .chl2_rowCollection {
+	padding-left:0.5em;
+	border:none;
+}
+
+.chl2_w_compactEvent .chl2_date {
+	padding-right:0.25em;
+}

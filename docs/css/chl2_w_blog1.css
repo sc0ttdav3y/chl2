@@ -1,0 +1,56 @@
+/* chl2_w_blog1.css */
+
+/* Styles for the blog widget. This file relies on core.css */
+
+/*
+Usage:
+
+*/
+
+.chl2_blogItem {
+	padding:1em 0.5em;
+}
+
+.chl2_blogItem h3 {
+	margin-top:0;
+}
+
+.chl2_blogItem .chl2_image {
+	width:88px;
+	height:88px;
+	float:left;
+	overflow:hidden;
+}
+
+.chl2_important .chl2_image {
+	width:176px;
+	height:117px;
+}
+
+.chl2_blogItem .chl2_text {
+	margin-left:88px;
+	padding-left:1em;
+}
+
+.chl2_important .chl2_text {
+	margin-left:176px;
+}
+
+.chl2_blogItem span {
+	color:#666;
+}
+
+.chl2_blogItem span a,
+.chl2_blogItem span a:visited {
+	color:#666;
+	text-decoration:underline;
+}
+
+.chl2_blogItem span a:hover {
+	text-decoration:none;
+	color:#111;
+}
+
+.chl2_blogItem {
+	border-bottom:1px solid #bcbcbc;
+}

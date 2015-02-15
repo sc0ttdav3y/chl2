@@ -1,0 +1,42 @@
+/* chl2_w_comment.css */
+
+/* Styles for the comment widget. This file relies on core.css */
+
+/*
+Usage:
+<h5>Comments</h5>
+<div class="chl2_w_comment">
+	<div class="chl2_wrapper">
+		<div class="chl2_header"></div>
+		<div class="chl2_rowCollection">
+			<div class="chl2_row chl2_odd">
+				<h6>By <a href="#">User Name</a> on 16 December 2008 at 1:20 PM</h6>
+				This is the comment text.
+			</div>
+			<div class="chl2_row chl2_even">
+				<h6>By <a href="#">User Name</a> on 16 December 2008 at 1:20 PM</h6>
+				This is the comment text.
+			</div>
+			<div class="chl2_row chl2_odd">
+				<h6>By <a href="#">User Name</a> on 16 December 2008 at 1:20 PM</h6>
+				This is the comment text.
+			</div>
+		</div>
+		<div class="chl2_footer">
+			<a class="chl2_addLink" href="#">Add a comment</a>
+		</div>
+	</div>
+</div>
+*/
+
+/* NOTE: the h5 can placed above the widget or in the header */
+
+.chl2_w_comment {
+	padding:0.5em;
+	height:1%; /* ie fix */
+	background-color:#eee;
+}
+
+.chl2_w_comment .chl2_footer {
+	padding:0.25em 0.5em;
+}

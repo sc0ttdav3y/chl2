@@ -1,0 +1,66 @@
+/* chl2_w_sitemap.css */
+
+/* Styles for the subNode widget. This file relies on core.css */
+
+/*
+<div class="chl2_w_sitemap">
+	<h5>Top level node</h5>
+	<ul>
+		<li><a href="#">Sub-page</a></li>
+		
+		<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
+			<ul>
+				<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
+				<li class="chl2_last"><a href="#">Child of sub-page</a></li>
+			</ul>
+		</li>	
+	</ul>
+	<h5>Top level node</h5>
+	<ul>
+		<li><a href="#">Sub-page</a></li>
+		
+		<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
+			<ul>
+				<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
+				<li class="chl2_last"><a href="#">Child of sub-page</a></li>
+			</ul>
+		</li>	
+	</ul>
+</div>
+*/
+
+.chl2_w_sitemap {
+
+}
+
+.chl2_w_sitemap h5 {
+	margin-top:1em;
+	padding:0.25em 0.5em;
+	background-color:#eee;
+	border-bottom:1px solid #bcbcbc;
+}
+
+.chl2_w_sitemap li {
+	margin:0;
+	list-style-position:outside;
+	list-style-type:none;
+	font-weight:bold;
+	line-height:2em;
+}
+
+.chl2_w_sitemap li li {
+	font-weight:normal;
+}
+
+.chl2_w_sitemap ul {
+	margin:0;
+	padding-left:1.0em;
+}
+
+.chl2_w_sitemap li ul {
+	padding-left:0;
+}
+
+.chl2_w_sitemap li ul li {
+	display:inline;
+}

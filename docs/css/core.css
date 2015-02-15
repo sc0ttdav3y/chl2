@@ -1,6 +1,6 @@
 /* core.css */
 
-/* Version 2.0.15 */
+/* Version 2.1.0 */
 
 /* This file contains the basic components required for Datalink websites. 
 
@@ -34,12 +34,14 @@
 
 }
 
+/* The default heading level for widgets. */
 h5 {
 	margin:0.25em 0;
 	padding:0;
 	font-size:1em;
 }
 
+/* The second heading level for widgets. */
 h6 {
 	margin:0.25em 0;
 	padding:0;
@@ -106,40 +108,6 @@ a img, a:visited img {
 	border:none;
 }
 
-.chl2_listRow {
-	margin:0;
-	padding:0;
-	list-style:none;
-	list-style-position:outside !important;
-}
-
-.chl2_listRow li {
-	margin-bottom:0.25em;
-	padding-bottom:0.5em;
-	border-bottom:1px solid #bcbcbc;
-}
-
-/* nested lists */
-
-.chl2_listRow li ul {
-	margin-left:0.25em;
-	padding-left:0;
-	list-style:disc;
-}
-
-.chl2_listRow li li {
-	margin:0;
-	padding:0;
-	border:none;
-}
-
-.chl2_noBullet {
-	margin-left:0;
-	padding-left:0;
-	list-style-position:outside !important;
-	list-style:none;
-}
-
 /*** ACTION LINKS ***/
 
 /* 16x16 icons are used */
@@ -164,53 +132,53 @@ a img, a:visited img {
 /* chl2_addLink is old, use chl2_add instead. Kept to ensure older projects still work as expected. */
 .chl2_addLink,
 .chl2_add {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 0;
+	background:url('../images/chl/chl_add.png') no-repeat 0 50%;
 }
 
 .chl2_edit {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -32px;	
+	background:url('../images/chl/chl_edit.png') no-repeat 0 50%;	
 }
 
 /* chl2_removeLink is old, use chl2_remove instead. Kept to ensure older projects still work as expected. */
 .chl2_removeLink,
 .chl2_remove {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -64px;
+	background:url('../images/chl/chl_remove.png') no-repeat 0 50%;
 }
 
 .chl2_view {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -96px;	
+	background:url('../images/chl/chl_view.png') no-repeat 0 50%;	
 }
 
 .chl2_activate {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -128px;	
+	background:url('../images/chl/chl_activate.png') no-repeat 0 50%;	
 }
 
 .chl2_deactivate {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -160px;	
+	background:url('../images/chl/chl_deactivate.png') no-repeat 0 50%;	
 }
 
 .chl2_sortUp {
-    background:url('../images/chl/chl_icons.png') no-repeat 0 -192px;
+    background:url('../images/chl/chl_sortUp.png') no-repeat 0 50%;
 }
 
 .chl2_sortDown {
-    background:url('../images/chl/chl_icons.png') no-repeat 0 -224px;
+    background:url('../images/chl/chl_sortDown.png') no-repeat 0 50%;
 }
 
 .chl2_expand {
-    background:url('../images/chl/chl_icons.png') no-repeat 0 -256px;
+    background:url('../images/chl/chl_expand.png') no-repeat 0 50%;
 }
 
 .chl2_contract {
-    background:url('../images/chl/chl_icons.png') no-repeat 0 -288px;
+    background:url('../images/chl/chl_contract.png') no-repeat 0 50%;
 }
 
 .chl2_move {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -320px;
+	background:url('../images/chl/chl_move.png') no-repeat 0 50%;	
 }
 
 .chl2_copy {
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -352px;
+	background:url('../images/chl/chl_copy.png') no-repeat 0 50%;	
 }
 
 /*** TARGET TYPES ***/
@@ -226,21 +194,21 @@ a img, a:visited img {
 }
 
 .chl2_externalLink {
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -384px;
+	background:url('../images/chl/chl_externalLink.png') no-repeat 100% 50%;
 }
 
 .chl2_downloadLink {
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -416px;
+	background:url('../images/chl/chl_downloadLink.png') no-repeat 100% 50%;
 }
 
 /* chl2_rss is old, use chl2_rssLink instead. Kept to ensure older projects still work as expected. */
 .chl2_rss,
 .chl2_rssLink {
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -448px;
+	background:url('../images/chl/chl_rssLink.png') no-repeat 100% 50%;
 }
 
 .chl2_fileLink {
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -480px;
+	background:url('../images/chl/chl_fileLink.png') no-repeat 100% 50%;
 }
 
 /*** MISCELLANEOUS LINKS ***/
@@ -254,23 +222,23 @@ a img, a:visited img {
 }
 
 .chl2_next {
-	padding-right:18px;
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -512px;
+	padding-right:15px;
+	background:url('../images/chl/chl_next.png') no-repeat 100% 50%;
 }
 
 .chl2_nextInactive {
-	padding-right:18px;
-	background:url('../images/chl/chl_icons.png') no-repeat 100% -544px;
+	padding-right:15px;
+	background:url('../images/chl/chl_nextInactive.png') no-repeat 100% 50%;
 }
 
 .chl2_previous {
-	padding-left:18px;
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -576px;
+	padding-left:15px;
+	background:url('../images/chl/chl_previous.png') no-repeat 0 50%;
 }
 
 .chl2_previousInactive {
-	padding-left:18px;
-	background:url('../images/chl/chl_icons.png') no-repeat 0 -608px;
+	padding-left:15px;
+	background:url('../images/chl/chl_previousInactive.png') no-repeat 0 50%;
 }
 
 a.chl2_minorLink,
@@ -281,7 +249,7 @@ a.chl2_minorLink:visited {
 /*** TEXT WIDGETS ***/
 
 .chl2_inactive {
-	color:#bcbcbc;
+	color:#ccc;
 }
 
 /*** CONTAINER WIDGETS ***/
@@ -301,23 +269,18 @@ a.chl2_minorLink:visited {
 	height:1%; /* ie fix */
 }
 
-/* Used inside chl2_panel and other widgets */
 .chl2_body {
-
-}
-
-.chl2_panel .chl2_body {
 	padding:0.5em;
 }
 
 /* Used inside chl2_panel and other widgets */
 .chl2_header {
-	position:relative;
+
 }
 
 /* Used inside chl2_panel and other widgets */
 .chl2_footer {
-	position:relative;
+
 }
 
 /* Used inside chl2_panel and other widgets */
@@ -329,11 +292,6 @@ a.chl2_minorLink:visited {
 .chl2_row {
 	padding:0.25em 0.5em;
 	border-bottom:solid 1px #bcbcbc;
-}
-
-.chl2_row p {
-	margin:0;
-	padding:0;
 }
 
 /* A collection of chl2_row widgets */
@@ -465,32 +423,13 @@ a.chl2_minorLink:visited {
 }
 
 .chl2_paginatedSet .chl2_header {
-	padding:0.25em 0;
+	padding:0.25em 0.5em;
 	border-bottom:solid 1px #bcbcbc;	
 }
 
 .chl2_paginatedSet .chl2_footer {
-	padding:0.25em 0;
+	padding:0.25em 0.5em;
 	border-top:solid 1px #bcbcbc;
-}
-
-.chl2_paginatedSet .chl2_rowCollection {
-	margin-bottom:0;
-	border-top:none;
-}
-
-.chl2_paginatedSet .chl2_2ColumnList {
-	margin-bottom:0;
-}
-
-.chl2_pagination span,
-.chl2_pagination a {
-	margin:0 0.25em;
-}
-
-.chl2_pagination span span,
-.chl2_pagination span a {
-	margin:0;
 }
 
 /* chl2_imageTextGroup */
@@ -514,23 +453,9 @@ a.chl2_minorLink:visited {
 	/* the imageTextGroup text */
 }
 
-.chl2_actions {
-	/* group action links together */
-}
-
-.chl2_header .chl2_actions {
-	position:absolute;
-	top:0;
-	right:0;
-}
-
-.chl2_actions a {
-	margin-left:1em;
-}
-
 /*** TAB WIDGETS ***/
 
-/* A basic tab layout. Content is placed in chl2_tabBody. */
+/* A basic tab layout. Content is placed in chl2_body. */
 .chl2_tabSet {
 	/*
 	Usage:
@@ -552,7 +477,6 @@ a.chl2_minorLink:visited {
 	*/
 	
 	height:1%; /* ie fix */
-	clear:both;
 }
 
 .chl2_tabList {
@@ -568,7 +492,7 @@ a.chl2_minorLink:visited {
 	display:block;
 	margin:0;
 	padding:0;
-	background-color:#eee;
+	background-color:#ccc;
 	border-left:solid 1px #666;
 	border-top:solid 1px #666;
 	float:left;
@@ -609,12 +533,12 @@ a.chl2_minorLink:visited {
 	Usage:
 	<div class="chl2_systemMessage">
 		<div class="chl2_warning">
-			<heading level>[title...]</heading level>
+			<h6>[title...]</h6>
 			[content...]
 		</div>
 	</div>	
 	*/
-	margin-bottom:1em;
+	margin-bottom:0.5em;
 }
 
 .chl2_systemMessage .chl2_warning, 
@@ -622,11 +546,6 @@ a.chl2_minorLink:visited {
 .chl2_systemMessage .chl2_success,
 .chl2_systemMessage .chl2_information {
 	padding:0.5em;
-}
-
-.chl2_systemMessage ul,
-.chl2_systemMessage ol {
-	margin-bottom:0;
 }
 
 /*** HIGHLIGHTING ***/
@@ -657,7 +576,7 @@ a.chl2_minorLink:visited {
 
 .chl2_information {
 	padding:0 0.25em;
-	background-color:#eee;
+	background-color:#ccc;
 	border:solid 1px #999;
 }
 
@@ -674,7 +593,6 @@ a.chl2_minorLink:visited {
 
 .chl2_table th {
 	text-align:left;
-	background:#eee;
 }
 
 .chl2_table td , .chl2_table th {
@@ -702,11 +620,11 @@ a.chl2_minorLink:visited {
 }
 
 .chl2_important {
-	/* A placeholder class. Refer to .chl2_w_blog for example usage. */
+	/* A placeholder class. Refer to .chl2_w_blog1 for example usage. */
 }
 
 .chl2_sticky {
-	/* A placeholder class. Refer to .chl2_w_blog for example usage. */
+	background-color:#fff2b2;
 }
 
 /* Modify the last element in a list, row collection, etc. */
@@ -729,37 +647,24 @@ table.chl2_labelValueGroup,
 	width:auto;
 }
 
-.chl2_table.chl2_labelValueGroup td,
-.chl2_table.chl2_labelValueGroup th {
-	padding:0 0.25em;
-}
-
 .chl2_title {
-	/* A placeholder class.*/
+	/* A placeholder class. Refer to .chl2_title h6 for example usage. */
 }
 
 /* Display headings as block level elements that span the full width of their container. */
-.chl2_title {
-	padding:0.5em;
-	background-color:#eee;
-}
-
-.chl2_title h1,
-.chl2_title h2,
-.chl2_title h3,
-.chl2_title h4,
-.chl2_title h5,
 .chl2_title h6 {
 	/*
 	Usage:
-	<div class="chl2_title">
-		<heading level>[title...]</heading level>
+	<div class="chl2_rowCollection chl2_2Column chl2_title">
+		<div class="chl2_row">
+			<h6>[title...]</h6>
+			[content...]
+		</div>
 	</div>
 	*/
-	margin:0;
 	display:block;
-	font-size:1em;
-	font-weight:bold;
+	padding:0.5em;
+	background-color:#ccc;
 }
 
 /*** LAYOUT AND POSITION MODIFIERS ***/
@@ -776,11 +681,6 @@ table.chl2_labelValueGroup,
 
 .chl2_clear {
 	clear:both;
-}
-
-.chl2_hidden {
-	position:absolute;
-	left:-999em;
 }
 
 /*** FORM WIDGETS ***/
@@ -804,6 +704,7 @@ table.chl2_labelValueGroup,
 }
 
 .chl2_form .chl2_formItem {
+	margin:0.25em 0;
 	padding:0.5em;
 }
 
@@ -831,13 +732,18 @@ table.chl2_labelValueGroup,
 
 .chl2_labelledField label {
 	display:inline;
+	padding:0;
 	width:auto;
 	text-align:left;
 	float:none;
 }
 
-.chl2_form .chl2_labelledField label {
-	padding-left:0;
+.chl2_labelledField .chl2_radio {
+	vertical-align:top;
+}
+
+.chl2_labelledField .chl2_checkbox {
+	vertical-align:bottom;
 }
 
 .chl2_textbox {
@@ -849,10 +755,6 @@ table.chl2_labelValueGroup,
 }
 
 .chl2_textarea {
-	overflow:auto;
-}
-
-.chl2_password {
 
 }
 
@@ -869,14 +771,10 @@ table.chl2_labelValueGroup,
 }
 
 .chl2_multipleSelect {
-	overflow:auto;
+
 }
 
 .chl2_fileUpload {
-
-}
-
-.chl2_date {
 
 }
 
@@ -887,7 +785,7 @@ table.chl2_labelValueGroup,
 
 .chl2_minorButton {
 	/* Represents a minor action */
-	font-size:0.786em;
+	font-size:0.825em;
 }
 
 .chl2_majorButton {
@@ -909,342 +807,32 @@ table.chl2_labelValueGroup,
 	color:#fff;
 }
 
-.chl2_helperText {
-	
-}
-
-.chl2_helperText span {
-	margin-top:0.5em;
-	color:#999;
+.chl2_formHelp {
 	display:block;
-	font-size:0.786em;
-	clear:both;
-}
-
-/*** *** EXTENSIONS TO CORE *** ***/
-
-/*** WIDGETS ***/
-
-/* chl2_w_sitemap */
-
-/*
-<div class="chl2_w_sitemap">
-	<h2>Top level node</h2>
-	<ul>
-		<li><a href="#">Sub-page</a></li>
-		
-		<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
-			<ul>
-				<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-				<li class="chl2_last"><a href="#">Child of sub-page</a></li>
-			</ul>
-		</li>	
-	</ul>
-	<h2>Top level node</h2>
-	<ul>
-		<li><a href="#">Sub-page</a></li>
-		
-		<li><a href="#">Sub-page</a>&nbsp;&raquo;&nbsp;
-			<ul>
-				<li><a href="#">Child of sub-page</a>&nbsp;|&nbsp;</li>
-				<li class="chl2_last"><a href="#">Child of sub-page</a></li>
-			</ul>
-		</li>	
-	</ul>
-</div>
-*/
-
-.chl2_w_sitemap h1,
-.chl2_w_sitemap h2,
-.chl2_w_sitemap h3,
-.chl2_w_sitemap h4,
-.chl2_w_sitemap h5,
-.chl2_w_sitemap h6 {
-	margin-top:1em;
-	padding:0.25em 0.5em;
-	font-size:1em;
-	font-weight:bold;
-	background-color:#eee;
-	border-bottom:1px solid #bcbcbc;
-}
-
-.chl2_w_sitemap {
-	padding-left:1em;
-	list-style-position:outside;
-	list-style:none;
-}
-
-.chl2_w_sitemap li {
-	font-weight:bold;
-	line-height:2em;
-}
-
-.chl2_w_sitemap li li {
-	font-weight:normal;
-}
-
-.chl2_w_sitemap li ul {
-	padding-left:0;
-}
-
-.chl2_w_sitemap li ul li {
-	display:inline;
-}
-
-/* chl2_w_subNode */
-
-/*
-Usage:
-<ul class="chl2_w_subNode">
-	<li class="chl2_odd">
-		<a href="#">Link to subnode one</a>
-		<br/>
-		This is the summary text for subnode one.
-	</li>
-	<li class="chl2_even">
-		<a href="#">Link to subnode two</a>
-		<br/>
-		This is the summary text for subnode two.
-	</li>
-	<li class="chl2_odd">
-		<a href="#">Link to subnode three</a>
-		<br/>
-		This is the summary text for subnode three.
-	</li>
-	<li class="chl2_even chl2_last">
-		<a href="#">Link to subnode four</a>
-		<br/>
-		This is the summary text for subnode four.
-	</li>
-</ul>
-*/
-
-.chl2_w_subNode {
-	margin:0;
-	padding:0;
-	list-style:none;
-	height:1%; /* ie fix */
-}
-
-.chl2_w_subNode li {
-	margin:0;
-	padding:0.25em 0.5em;
-	list-style:none;
-	list-style-position:outside; /* for ie */
-	border-bottom:solid 1px #bcbcbc;
-}
-
-/* chl2_w_blog */
-
-.chl2_w_blog .chl2_noBullet,
-.chl2_w_news .chl2_noBullet {
-	overflow:hidden;
-}
-
-.chl2_w_news .chl2_noBullet.chl2_featured {
-	margin:0;
-}
-
-.chl2_w_blog ol .chl2_post,
-.chl2_w_news ol .chl2_article {
-	padding:1em 0;
-	border-bottom:1px solid #ccc;
-	overflow:hidden;
-	height:1%; /* for ie6 */
-}
-
-.chl2_w_blog .chl2_author,
-.chl2_w_news .chl2_date {
-	font-size:0.857em;
-	font-weight:bold;
-	color:#999;
-}
-
-.chl2_w_blog .chl2_details,
-.chl2_w_news .chl2_details {
-	font-size:0.857em;
-	font-weight:bold;
-	color:#999;
-}
-
-.chl2_w_blog .chl2_separator,
-.chl2_w_news .chl2_separator {
-	font-weight:normal;
-}
-
-.chl2_w_blog .chl2_image,
-.chl2_w_news .chl2_image {
+	margin-left:0.5em;
+	width:20px;
+	height:20px;
 	float:left;
+	background:url('../images/chl/chl_formHelp.gif') no-repeat 50% 50%;
 }
 
-.chl2_w_blog .chl2_entry .chl2_image {
-	margin-right:1em;
-	margin-bottom:1em;
+.chl2_formHelp span {
+	position:absolute;
+	visibility:hidden;
+	text-indent:-900em;
 }
 
-.chl2_w_blog .chl2_preview,
-.chl2_w_news .hasAvatar .chl2_preview {
-	margin-left:100px;
-}
-
-.chl2_w_news .chl2_featured .hasImage .chl2_preview {
-	margin-left:240px;
-}
-
-.chl2_w_news .hasImage .chl2_preview {
-	margin-left:140px;
-}
-
-/* chl2_w_comment */
-
-.chl2_w_comment {
-	padding-top:0.5em;
-	border-top:1px solid #ccc;
-}
-
-.chl2_w_comment ol {
-	margin:0;
-	padding:0;
-	list-style-type:none;
-	list-style-position:outside;
-	overflow:hidden;
-}
-
-.chl2_w_comment ol .chl2_comment {
-	margin-bottom:1em;
-	padding:0 0 1em 0;
-	border-bottom:1px solid #ccc;
-	overflow:hidden;
-}
-
-.chl2_w_comment .chl2_rate {
-	font-size:0.857em;
-	font-weight:bold;
-	color:#999;
-}
-
-.chl2_w_comment .chl2_rating {
-	margin-right:5px;
-	font-weight:bold;
-	color:#999;
-}
-
-.chl2_w_comment .chl2_positive {
-	color:green;
-}
-
-.chl2_w_comment .chl2_negative {
-	color:red;
-}
-
-.chl2_w_comment .chl2_like {
-	padding-left:20px;
-	background:url('../images/chl/like.png') no-repeat 0 50%;
-}
-
-.chl2_w_comment .chl2_dislike {
-	padding-left:20px;
-	background:url('../images/chl/dislike.png') no-repeat 0 50%;
-}
-
-.chl2_w_comment .chl2_separator {
-	font-weight:normal;
-}
-
-/* chl2_w_calendar and chl2_w_event */
-
-.chl2_w_calendar .chl2_noBullet {
-	margin:0;
-	padding:0;
-	overflow:hidden;
-}
-
-.chl2_w_calendar .chl2_event {
-	overflow:hidden;
-}
-
-.chl2_w_calendar .chl2_title {
-	margin-bottom:1em;
-	background:#f2efdf;
-	text-transform:uppercase;
-	letter-spacing:0.05em;
-}
-
-.chl2_w_calendar .chl2_details,
-.chl2_w_event .chl2_details {
-	font-size:0.857em;
-	font-weight:bold;
-}
-
-.chl2_w_calendar .chl2_details ul,
-.chl2_w_event .chl2_details ul {
-	margin:0 0 1em 0;
-	padding:0;
-	list-style-type:none;
-	list-style-position:outside !important;
-	overflow:hidden;	
-}
-
-.chl2_w_blog .chl2_separator {
-	font-weight:normal;
-}
-
-.chl2_w_calendar .chl2_image {
+.chl2_formDatePicker {
+	display:block;
+	margin-left:0.5em;
+	width:20px;
+	height:14px;
 	float:left;
+	background:url('../images/chl/chl_formDatePicker.gif') no-repeat 50% 50%;
 }
 
-.chl2_w_calendar .hasImage .chl2_preview {
-	margin-left:140px;
-}
-
-.chl2_w_event .chl2_image {
-	float:left;
-	margin:0 1em 1em 0;
-}
-
-/* chl2_w_file */
-
-.chl2_w_file {
-	overflow:hidden;
-}
-
-.chl2_w_file .chl2_left {
-	padding-right:1em;
-}
-
-/* chl2_w_activity */
-
-.chl2_w_activity .chl2_rowCollection {
-	margin-bottom:0;
-}
-
-.chl2_w_activity .chl2_footer {
-	padding:0.5em;
-}
-
-/* chl2_w_workspace */
-
-.chl2_w_workspace .chl2_image {
-	float:left;	
-}
-
-.chl2_w_workspace .hasImage .chl2_summary {
-	margin-left:100px;
-	overflow:hidden;
-}
-
-.chl2_w_workspace .chl2_listRow li {
-	margin:0;
-	padding:0.5em;
-	overflow:hidden;
-}
-
-.chl2_w_workspace .chl2_listRow li li {
-	padding:0;
-	margin-bottom:0.5em;
-	overflow:visible;
-}
-
-.chl2_w_workspace .chl2_listRow li li img {
-	vertical-align:text-bottom;
+.chl2_formDatePicker span {
+	position:absolute;
+	visibility:hidden;
+	text-indent:-900em;
 }

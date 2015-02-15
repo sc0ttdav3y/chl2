@@ -1,0 +1,169 @@
+/*
+
+In CHL many of the classes have shared padding values.
+
+You can use the following selectors to apply your own padding values in bulk, or you can leave the defaults.
+
+Note: This is a good starting point, but if you want pixel perfection between CHL and the base design you will have to go further.
+
+*/
+
+/* elements with default padding:0.25em 0.5em; */
+
+.chl2_row,
+.chl2_paginatedSet .chl2_header,
+.chl2_paginatedSet .chl2_footer,
+.chl2_table td,
+.chl2_table th,
+.chl2_validationMessage,
+.chl2_w_comment .chl2_footer,
+.chl2_w_sitemap h5,
+.chl2_w_subNode li {
+	/* your padding value */
+}
+
+/* elements with default padding:0.5em; */
+
+.chl2_body, .chl2_2ColumnList,
+.chl2_tabList li a,
+.chl2_systemMessage .chl2_warning, 
+.chl2_systemMessage .chl2_error, 
+.chl2_systemMessage .chl2_success,
+.chl2_systemMessage .chl2_information,
+.chl2_title h6,
+.chl2_form,
+.chl2_form .chl2_formItem,
+.chl2_form fieldset,
+.chl2_w_comment,
+.chl2_w_latestNews .chl2_left .chl2_text,
+.chl2_w_subNodeList {
+	/* your padding value */
+}
+
+/* elements with default padding:0 0.25em; */
+
+.chl2_new,
+.chl2_warning,
+.chl2_error,
+.chl2_success,
+.chl2_information {
+	/* your padding value */
+}
+
+/* end padding resets */
+
+/*
+
+Just like padding there is a shared border colour.
+
+You can use the following selectors to apply your own border colour in bulk, or you can leave the default.
+
+*/
+
+.chl2_row,
+.chl2_rowCollection,
+.chl2_row .chl2_row,
+.chl2_paginatedSet .chl2_header,
+.chl2_paginatedSet .chl2_footer,
+.chl2_table td, .chl2_table th,
+.chl2_w_compactEvent .chl2_2Column,
+.chl2_w_compactNews .chl2_2Column,
+.chl2_w_latestNews,
+.chl2_w_subNode .chl2_header,
+.chl2_w_subNode li,
+.chl2_w_sitemap h5,
+.chl2_blogItem {
+	/* border-color:_; */
+}
+
+/* end border resets */
+
+.chl2_odd {
+
+}
+
+.chl2_even {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+hr {
+	/*
+	margin:_;
+	padding:_;
+	height:_;
+	color:_;
+	background-color:_;
+	border:_;
+	*/
+}
+
+/* basic form properties */
+/* use the chl form classes for more control */
+
+input, textarea, select, option, legend {
+	/*
+	font-family:_;
+	font-size:_;
+	color:_;
+	*/
+}
+
+/*** tab set styles ***/
+
+.chl2_tabBody {
+	padding:12px;
+	position:relative;
+	top:-1px;
+	height:1%; /* for ie */
+	z-index:1;
+}
+
+.chl2_tabList {
+	position:relative;
+	left:0;
+	z-index:2;
+}
+
+.chl2_tabList li,
+.chl2_tabList li.chl2_last {
+	margin-right:3px;
+	position:relative;
+	top:0;
+	border:solid 1px #bbb;
+}
+
+.chl2_tabList li a,
+.chl2_tabList li a:visited {
+	padding:6px 12px;
+	font-weight:bold;
+	color:#222;
+	background:#ababab url('../images/ui/chl2_tabList_li_a.png') repeat-x 0 0;
+}
+
+.chl2_tabList li a:hover {
+	background:#fff url('../images/ui/chl2_tabList_li_a.png') repeat-x 0 100%;
+}
+
+.chl2_tabList li.chl2_active {
+	padding-top:1px;
+	position:relative;
+	top:0;
+	border-bottom:none;
+}
+
+.chl2_tabList li.chl2_active a,
+.chl2_tabList li.chl2_active a:visited {
+	background:#fff;
+}
+
+.chl2_tabBody {
+	border-color:#bbb;
+}
