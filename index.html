@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<title>CHL index</title>
+		
+		<style type="text/css">
+			html, body {
+				margin:0;
+				padding:0;
+				color:#222;
+			}
+			
+			html {
+				background-color:#ddd;
+
+			}
+			
+			body {
+				margin:auto;
+				padding:10px 20px;
+				width:760px;
+				background-color:#fff;
+				font-family:"Arial", sans-serif;
+				font-size:14px;
+				line-height:18px;
+			}
+			
+			h1 {
+				margin:18px 0;
+				padding:0;
+				font-size:24px;
+				font-weight:normal;
+				color:#000;
+				line-height:32px;
+			}
+			
+			h2 {
+				margin:27px 0 9px 0;
+				padding:0;
+				font-size:20px;
+				font-weight:normal;
+				color:#000;
+				line-height:26px;
+			}
+			
+			h3 {
+				margin:18px 0 9px 0;
+				padding:0;
+				font-size:16px;
+				font-weight:normal;
+				color:#000;
+				line-height:22px;
+			}
+			
+			p {
+				margin:0 0 18px 0;
+				padding:0;
+			}
+			
+			a, a:visited {
+				color:#1a40ff;
+				text-decoration:none;
+			}
+			
+			a:hover {
+				color:#000;
+				background-color:#ffdd33;
+			}
+			
+			.exampleCode {
+				margin:0 0 18px 0;
+				padding:5px 10px;
+				background-color:#eee;
+				font-family:"Courier";
+				font-size:12px;
+			}
+			
+			.exampleCode ol {
+				margin:0;
+				padding:0;
+				list-style-position:inside;
+			}
+			
+			.exampleCode li {
+				margin:0;
+				padding:0;
+				border-bottom:solid 1px #ccc;
+				line-height:22px;
+			}
+			
+			.exampleCode span {
+				margin-left:10px;
+				color:#000;
+			}
+			
+			.annotate {
+				padding:5px 10px;
+				background-color:#fff2b2;
+			}
+			
+			.highlight {
+				background-color:#ffdd33;
+			}
+			
+			li.last {
+				border:none;
+			}
+			
+			table {
+				margin:9px 0;
+				width:100%;
+				border-collapse:collapse;
+			}
+			
+			th {
+				text-align:left;
+				font-weight:normal;
+				font-style:italic;
+			}
+			
+			table .subHeading {
+				background-color:#ddd;
+				border-top:solid 2px #bcbcbc;
+				font-weight:bold;
+			}
+			
+			td, th {
+				padding:5px 10px;
+			}
+			
+			td {
+				vertical-align:top;
+				border-top:solid 1px #ccc;
+			}
+			
+			table .middle {
+				border-left:solid 1px #ccc;
+				border-right:solid 1px #ccc;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<h1>Datalink CHL 2.0.15</h1>
+		
+		<h2>Introduction</h2>
+		
+		<p>Datalink's Common HTML Library (CHL) allows programmers to develop websites using standard HTML that will look great on any CSS compatible site.</p>
+		
+		<p><strong>Designers</strong> should ensure the HTML and CSS of the websites they design follow the conventions defined in the following documents.</p>
+		
+		<p><strong>Developers</strong> should use the CHL when writing their modules and templates.</p>
+		
+		<p class="annotate"><strong>Developers, please note:</strong> Do not include any fs_ stylesheets in your project. These are obsolete and their resets will override CHL. If you need to update an old project, keep in mind that the fs_ stylesheets may cause unexpected results (in particular fs_text.css and fs_theme.css).</p>
+
+		<h2>Documentation and examples</h2>
+		
+		<h3>Documentation</h3>
+		
+		<ul>
+			<li><a href="docs/gettingStarted.html">Getting started</a> shows HTML and CSS authors how to use CHL in their projects.</li>
+			<li><a href="docs/chl_sampleComponents.html">Sample components</a> contains HTML test data that CSS authors need to style.</li>
+			<li><a href="docs/chl_developerGuide.html">Developer guide</a> is for programmers wishing to write templates and additional CHL widgets.</li>
+		</ul>
+		
+		<h3>Customising CHL styles</h3>
+		
+		<ul>
+			<li>An example site.css file is included in the css directory. You can copy and paste this file to the end of your own site.css. The bulk resets make it the perfect starting point for customising CHL. The file also shows how to style the tab set (you will also need to include the images/ui directory).</li>
+		</ul>
+		
+		<h3>Examples</h3>
+		
+		<ul>
+			<li><a href="docs/examples/genericSite/chl.html">Example 1</a> applies simple styling to the CHL.</li>
+		</ul>
+		
+		
+		<h3>Testing</h3>
+		
+		<ul>
+			<li><a href="docs/chl_testCode.html">Test code</a> has sample code for testing basic CHL components.</li>
+		</ul>
+		
+		
+		<h2>CHL component index</h2>
+		
+		<ul>
+			<li><a href="#a_textStyles">Text styles</a></li>
+			<li><a href="#a_pageLayoutStyles">Page layout styles</a></li>
+			<li><a href="#a_actionLinks">Action Links</a></li>
+			<li><a href="#a_targetTypes">Target Types</a></li>
+			<li><a href="#a_miscLinks">Miscellaneous Links</a></li>			
+			<li><a href="#a_layoutModifiers">Layout modifiers</a></li>
+			<li><a href="#a_appearanceModifiers">Appearance modifiers</a></li>
+			<li><a href="#a_containers">Containers</a></li>
+			<li><a href="#a_rowsAndColumns">Rows and columns</a></li>
+			<li><a href="#a_tabularLayouts">Tabular layouts</a></li>
+			<li><a href="#a_tabSets">Tab sets</a></li>
+			<li><a href="#a_paginatedData">Paginated data</a></li>
+			<li><a href="#a_highlighting">Highlighting</a></li>
+			<li><a href="#a_alertsAndSystemMessages">Alerts and system messages</a></li>
+			<li><a href="#a_forms">Forms</a></li>
+			<li><a href="#a_widgets">Widgets</a></li>
+		</ul>
+		
+		<table>
+			<tr>
+				<th width="15%">Component</th><th class="middle" width="65%">Description</th><th width="20%">Reference</th>
+			</tr>
+			
+			<!-- *** Text styles *** -->
+			<tr>
+				<td id="a_textStyles" class="subHeading" colspan="3">
+					Text styles
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Basic text styles</td>
+				<td class="middle">Basic styles for H1, H2, H3, H4, P, STRONG, I, HR and BLOCKQUOTE.</td>
+				<td><a href="docs/chl_developerGuide.html#a_basicTextStyles">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>Vertical list</td>
+				<td class="middle">Basic styles for UL and OL with support for nested lists</td>
+				<td><a href="docs/chl_developerGuide.html#a_verticalList">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_listRow</td>
+				<td class="middle">Show lists as a pseudo rows. Good for navigation or other lists where bullets aren't wanted.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_listRow">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_horizontalList</td>
+				<td class="middle">A list displayed horizontally.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_horizontalList">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_inactive</td>
+				<td class="middle">Indicates inactive text or elements.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_inactive">Reference</a></td>
+			</tr>
+
+			<!-- *** Page layout styles *** -->
+			<tr>
+				<td id="a_pageLayoutStyles" class="subHeading" colspan="3">
+					Page layout styles
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_page_wrapper</td>
+				<td class="middle">Identifies a page layout group. Use these areas to divide a content area into columns.</td>
+				<td><a href="docs/chl_developerGuide.html#a_pageLayoutStyles">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_page_column</td>
+				<td class="middle">A page column.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_page_column">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_page_2Column</td>
+				<td class="middle">A two column page layout. Use this for page layouts only. For widget layouts refer to chl2_2Column.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_page_2Column">Reference</a></td>
+			</tr>
+			
+			<!-- *** Action Links *** -->
+			<tr>
+				<td id="a_actionLinks" class="subHeading" colspan="3">
+					Action Links
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_add</td>
+				<td class="middle">A hyperlink with an add icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_add">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_remove</td>
+				<td class="middle">A hyperlink with a remove icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_remove">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_activate</td>
+				<td class="middle">A hyperlink with an activate icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_activate">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_deactivate</td>
+				<td class="middle">A hyperlink with a deactivate icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_deactivate">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_edit</td>
+				<td class="middle">A hyperlink with an edit icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_edit">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_view</td>
+				<td class="middle">A hyperlink with a view icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_view">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_sortUp</td>
+				<td class="middle">A hyperlink that sorts a set (ascending).</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_sortUp">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_sortDown</td>
+				<td class="middle">A hyperlink that sorts a set (descending).</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_sortDown">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_expand</td>
+				<td class="middle">Expand an element, such as a div. Note, you'll have to include your own JS.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_expand">Reference</a></td>
+			</tr>	
+			
+			<tr>
+				<td>chl2_contract</td>
+				<td class="middle">Contract an element, such as a div. Note, you'll have to include your own JS.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_contract">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_move</td>
+				<td class="middle">A hyperlink with a move icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_move">Reference</a></td>
+			</tr>	
+			
+			<tr>
+				<td>chl2_copy</td>
+				<td class="middle">A hyperlink with a copy icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_copy">Reference</a></td>
+			</tr>				
+			
+			<!-- *** Target types *** -->
+			<tr>
+				<td id="a_targetTypes" class="subHeading" colspan="3">
+					Target Types
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_externalLink</td>
+				<td class="middle">A hyperlink indicating an external link.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_externalLink">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_fileLink</td>
+				<td class="middle">A hyperlink indicating a file download.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_fileLink">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_downloadLink</td>
+				<td class="middle">A hyperlink indicating a download.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_downloadLink">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_rssLink</td>
+				<td class="middle">A hyperlink with an RSS icon.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_rssLink">Reference</a></td>
+			</tr>
+			
+			<!-- *** Miscellaneous links *** -->
+			<tr>
+				<td id="a_miscLinks" class="subHeading" colspan="3">
+					Miscellaneous Links
+				</td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_next</td>
+				<td class="middle">A hyperlink that moves foward through a set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_next">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_nextInactive</td>
+				<td class="middle">An inactive representation of chl2_next.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_nextInactive">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_previous</td>
+				<td class="middle">A hyperlink that moves backwards through a set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_previous">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_previousInactive</td>
+				<td class="middle">An inactive representation of chl2_previous.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_previousInactive">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_minorLink</td>
+				<td class="middle">A hyperlink that has less importance than the other links around it. For example, the link to the author of an article might be downplayed when shown alongside the link to the article itself.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_minorLink">Reference</a></td>
+			</tr>
+			
+			<!-- *** Layout modifiers *** -->
+			<tr>
+				<td id="a_layoutModifiers" class="subHeading" colspan="3">
+					Layout modifiers
+				</td>
+			</tr>
+		
+			<tr>
+				<td>chl2_left</td>
+				<td class="middle">Floats elements left.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_left">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_right</td>
+				<td class="middle">Floats elements right.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_right">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_clear</td>
+				<td class="middle">Resets the document flow, which is essential after floating elements.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_clear">Reference</a></td>
+			</tr>
+		
+			<!-- *** Appearance modifiers *** -->
+			<tr>
+				<td id="a_appearanceModifiers" class="subHeading" colspan="3">
+					Appearance modifiers
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_odd</td>
+				<td class="middle">For odd numbered elements in a set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_odd">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_even</td>
+				<td class="middle">For even numbered elements in a set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_even">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_last</td>
+				<td class="middle">The last element of a set. This attribute can be applied to all elements, for example li, td, chl2_row, etc.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_last">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_active</td>
+				<td class="middle">Indicates the selected element of a set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_active">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_important</td>
+				<td class="middle">Indicates an important item.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_important">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_sticky</td>
+				<td class="middle">Indicates a sticky item.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_sticky">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_title</td>
+				<td class="middle">Elevates the importance of a heading.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_title">Reference</a></td>
+			</tr>
+		
+			<!-- *** Containers *** -->
+			<tr>
+				<td id="a_containers" class="subHeading" colspan="3">
+					Containers
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_panel</td>
+				<td class="middle">Groups related components and data.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_panel">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_header</td>
+				<td class="middle">Typically used with chl2_panel to allow header styles to be applied.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_header">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_footer</td>
+				<td class="middle">Typically used with chl2_panel to allow footer styles to be applied.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_footer">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_body</td>
+				<td class="middle">Used with chl2_header and chl2_footer for advanced styling of grouped elements. Typically these three components would be grouped inside chl2_panel, with the main content within chl2_body.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_body">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_wrapper</td>
+				<td class="middle">Used to wrap chl2_header, chl2_body and chl2_footer to allow the advanced styling of grouped elements. Typically these components would be grouped inside chl2_panel, with the main content within chl2_body.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_panel">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_imageTextGroup</td>
+				<td class="middle">Groups an image with related text.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_imageTextGroup">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_image</td>
+				<td class="middle">The image for the grouped image and text.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_image">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_text</td>
+				<td class="middle">The text (content) for the grouped image and text.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_text">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_labelValueGroup</td>
+				<td class="middle">A wrapper for label and value pair groups.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_labelValueGroup_label_value">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_label</td>
+				<td class="middle">A label with a related value.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_labelValueGroup_label_value">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_value</td>
+				<td class="middle">A value with a related label.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_labelValueGroup_label_value">Reference</a></td>
+			</tr>
+			
+			
+			<!-- *** Rows and columns *** -->
+			<tr>
+				<td id="a_rowsAndColumns" class="subHeading" colspan="3">
+					Rows and columns
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_row</td>
+				<td class="middle">A row of data.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_row">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_rowCollection</td>
+				<td class="middle">A collection of rows.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_rowCollection">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_2Column</td>
+				<td class="middle">Splits a row or collection of rows into two columns when used with chl2_columnCollection.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_2Column_columnCollection">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_columnCollection</td>
+				<td class="middle">A collection of columns, generally within a row.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_2Column_columnCollection">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_2ColumnList</td>
+				<td class="middle">Represents continuous data that flows between two columns.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_2ColumnList">Reference</a></td>
+			</tr>
+			
+			<!-- *** Tabular layouts *** -->
+			<tr>
+				<td id="a_tabularLayouts" class="subHeading" colspan="3">
+					Tabular layouts
+				</td>
+			</tr>
+		
+			<tr>
+				<td>Basic table elements</td>
+				<td class="middle">Basic styles for table, th, tr, td</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_table">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_table</td>
+				<td class="middle">Indicates a CHL table. This helps avoid any inadvertent adjustments to the main site layout.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_table">Reference</a></td>
+			</tr>
+			
+			<!-- *** Paginated data *** -->
+			<tr>
+				<td id="a_paginatedData" class="subHeading" colspan="3">
+					Paginated data
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_paginatedSet</td>
+				<td class="middle">A wrapper for paginated data. It includes a next and previous link for traversing the content. </td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_paginatedSet">Reference</a></td>
+			</tr>
+			
+			<!-- *** tab sets *** -->
+			<tr>
+				<td id="a_tabSets" class="subHeading" colspan="3">
+					Tab sets
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_tabSet</td>
+				<td class="middle">Provides a layout for tabbed data.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_tabSet_tabList_tabBody">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_tabList</td>
+				<td class="middle">A collection of tabs.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_tabSet_tabList_tabBody">Reference</a></td>
+			</tr>
+	
+			<tr>
+				<td>chl2_tabHeader</td>
+				<td class="middle">This header is associated with chl2_tabBody and should not be confused with chl2_tabList which contains the tab elements. This component allows for more complex styling around the tab set content area.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_tabSet_tabList_tabBody">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_tabFooter</td>
+				<td class="middle">The footer of the tab set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_tabSet_tabList_tabBody">Reference</a></td>
+			</tr>
+	
+			<tr>
+				<td>chl2_tabBody</td>
+				<td class="middle">The content area for the tab set.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_tabSet_tabList_tabBody">Reference</a></td>
+			</tr>
+			
+			<!-- *** Highlighting *** -->
+			<tr>
+				<td id="a_highlighting" class="subHeading" colspan="3">
+					Highlighting
+				</td>
+			</tr>
+
+			<tr>
+				<td>chl2_new</td>
+				<td class="middle">Indicates new information.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_new">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_warning</td>
+				<td class="middle">Represents a warning.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_warning">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_error</td>
+				<td class="middle">Represents an error.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_error">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_success</td>
+				<td class="middle">Represents success.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_success">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_information</td>
+				<td class="middle">Represents information.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_information">Reference</a></td>
+			</tr>
+			
+			<!-- *** Alerts and system messages *** -->
+			<tr>
+				<td id="a_alertsAndSystemMessages" class="subHeading" colspan="3">
+					Alerts and system messages
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_systemMessage</td>
+				<td class="middle">Provides user feedback. Typically used with chl2_warning, chl2_error or chl2_success.</td>
+				<td><a href="docs/chl_developerGuide.html#a_alertsAndSystemMessages">Reference</a></td>
+			</tr>
+		
+			<!-- *** Forms *** -->
+			<tr>
+				<td id="a_forms" class="subHeading" colspan="3">
+					Forms
+				</td>
+			</tr>
+			
+			<tr>
+				<td>chl2_form</td>
+				<td class="middle">A CHL form.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_form">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_formItem</td>
+				<td class="middle">Groups a form field and its label together as a single unit. A typical form would consist of many form items.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_formItem_field">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_field</td>
+				<td class="middle">Contains an individual form field.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_formItem_field">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_labelledField</td>
+				<td class="middle">Used with radio buttons and checkboxes to group each input with its relevant label.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_radio_checkbox_labelledField">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_textbox</td>
+				<td class="middle">A text input.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_textbox">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_password</td>
+				<td class="middle">A password input.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_password">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_textarea</td>
+				<td class="middle">A text area.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_textarea">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_checkbox</td>
+				<td class="middle">A checkbox.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_radio_checkbox_labelledField">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_radio</td>
+				<td class="middle">A radio button.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_radio_checkbox_labelledField">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_select</td>
+				<td class="middle">A select box.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_select">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_multipleSelect</td>
+				<td class="middle">A multiple select box.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_multipleSelect">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_fileUpload</td>
+				<td class="middle">A file upload input.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_fileUpload">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_date</td>
+				<td class="middle">Indicates a date field. Use with chl2_textbox.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_formDatePicker">Reference</a></td>
+			</tr>			
+			
+			<tr>
+				<td>chl2_button</td>
+				<td class="middle">A standard button.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_button">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_minorButton</td>
+				<td class="middle">Represents a minor action.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_minorButton">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_majorButton</td>
+				<td class="middle">Represents a major action.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_majorButton">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_required</td>
+				<td class="middle">Denotes a required field.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_required">Reference</a></td>
+			</tr>
+			
+			<tr>
+				<td>chl2_validationMessage</td>
+				<td class="middle">Displays feedback to the user when form validation fails. This compoent is used with chl2_error, refer to the reference guide for details.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_validationMessage">Reference</a></td>
+			</tr>
+
+			<tr>
+				<td>chl2_helperText</td>
+				<td class="middle">Provides help relating to a specific form field. Displayed as text.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_helperText">Reference</a></td>
+			</tr>
+
+			<!-- *** Widgets *** -->
+			<tr>
+				<td id="a_widgets" class="subHeading" colspan="3">
+					Widgets
+				</td>
+			</tr>
+		
+			<tr>
+				<td>chl2_w_subNode</td>
+				<td class="middle">Displays subnodes.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_w_subNode">Reference</a></td>
+			</tr>		
+			<tr>
+				<td>chl2_w_sitemap</td>
+				<td class="middle">Sitemap widget.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_w_sitemap">Reference</a></td>
+			</tr>
+		
+			<tr>
+				<td>chl2_w_blog</td>
+				<td class="middle">The standard blog widget.</td>
+				<td><a href="docs/chl_developerGuide.html#a_chl2_w_blog">Reference</a></td>
+			</tr>
+		
+		</table>
+	</body>
+</html>

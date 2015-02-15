@@ -1,0 +1,940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=8" />
+		<title>CHL</title>
+		<link rel="stylesheet" type="text/css" href="../../css/core.min.css"/>
+		<!-- site -->
+		<link rel="stylesheet" type="text/css" href="css/site.css"/>
+
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css"/>
+		<![endif]-->		
+		
+		<!-- js -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.min.js"></script>
+		
+		<!-- all pages -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*** hide and show default input values (search) ***/
+				$('#Search input[type="text"]').focus(function() {
+			        if (this.value == this.defaultValue) {
+			        	this.value = '';
+			    	}
+			        if(this.value != this.defaultValue) {
+				    	this.select();
+			        }
+			    });
+			
+			    $('#Search input[type="text"]').blur(function() {
+			        if (this.value == ''){
+			        	this.value = (this.defaultValue ? this.defaultValue : '');
+			    	}
+			    });
+			});		
+		</script>
+	</head>
+	<body>
+	<!-- page starts -->
+	<div id="Page">
+		<div id="Header">
+			
+			<h1>
+				<a href="#">
+					<!-- update this image -->
+					<img src="images/logo.png" alt="Generic Site" />
+				</a>
+			</h1>
+			
+			<div id="UserActions">
+				<span>Logged in as Andrew - <a href="#">Logout</a></span>
+				<form id="Search" action="#">
+					<input type="text" value="Search" />
+				</form>
+			</div>
+			<div id="Navigation">
+				<ul>
+					<li class="chl2_first"><a href="#"><span>Home</span></a></li>
+					<li class="chl2_active"><a href="#"><span>Section</span></a></li>
+					<li><a href="#"><span>Section</span></a></li>
+					<li class="chl2_last"><a href="#"><span>Section</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- main starts -->
+		<div id="Main" class="twoColumn">
+			<div class="sidebar chl2_left">
+				<div id="SubNavigation">
+					<h2>Section Name</h2>
+					<ul class="chl2_listRow">
+						<li><a href="#">Sub Page One</a></li>
+						<li class="chl2_active"><a href="#">My Test Page</a></li>
+						<li><a href="#">Sub Page Three</a></li>
+						<li><a href="#">Sub Page Four</a></li>						
+					</ul>
+				</div>
+			</div>
+			<!-- content starts -->
+			<div id="Content">
+				<div id="BreadCrumb">
+					<a href="#">Home</a> > <a href="#">Section Name</a> > <span>My Test Page</span>
+				</div>
+		<!-- EXAMPLE CODE STARTS „ DO NOT INCLUDE ABOVE CODE WHEN TESTING -->
+		
+		<h1>Basic CHL components</h1>
+				
+		<h2>Text styles</h2>
+		
+		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
+		<p>This is a paragraph. Suspendisse euismod eleifend lectus. Aliquam id tellus. Etiam enim arcu, molestie a, congue ac, vulputate vitae, augue. Sed dapibus iaculis justo. Sed mauris nisi, egestas id, tincidunt non, accumsan sed, purus. Nulla facilisi. Donec in urna cursus lacus auctor condimentum. Etiam convallis, pede quis placerat sagittis, felis sem faucibus leo, in elementum neque diam in tellus. Sed mi lorem, sodales at, lacinia quis, scelerisque in, sapien. Maecenas nibh. Aliquam quis est. Donec lacinia tortor non nisl. Ut ac orci. Nulla facilisi. Proin a erat at tellus facilisis adipiscing. Maecenas ultrices adipiscing arcu. </p>
+		
+		<h1>Heading level one</h1>
+		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
+		
+		<h2>Heading level two</h2>
+		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
+		
+		<h3>Heading level three</h3>
+		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
+		
+		<h4>Heading level four</h4>
+		<p>This is a paragraph. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus. Aliquam ligula. Donec nulla massa, hendrerit eu, sollicitudin ac, ultricies sed, lacus. Sed tellus tellus, gravida vel, consequat sed, facilisis ut, erat. Cras tincidunt, magna dapibus luctus dignissim, arcu elit fermentum elit, a aliquet purus ante ac leo. Morbi ut dui ac tortor venenatis congue. Ut sapien tellus, sollicitudin quis, convallis scelerisque, dictum at, orci. Curabitur volutpat lacus ut ligula. Curabitur porttitor pede. </p>
+		
+		<p>Text can be <strong>bold</strong> or <i>italic</i>.</p>
+		
+		<blockquote>This is a block quote. Quisque quis mauris. Maecenas tincidunt, quam at luctus scelerisque, arcu nisl luctus augue, non vehicula arcu eros in risus.</blockquote>
+		
+		<h2>Unordered list</h2>
+		
+		<!-- widget start -->
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2
+				<ul>
+					<li>Nested list item 2.1</li>
+					<li>Nested list item 2.2</li>
+					<li>Nested list item 2.3</li>
+				</ul>
+			</li>
+			<li>List item 3</li>
+		</ul>
+		<!-- widget end -->
+		
+		<h2>Ordered list</h2>
+		
+		<!-- widget start -->
+		<ol>
+			<li>List item</li>
+			<li>List item
+				<ol>
+					<li>Nested list item</li>
+					<li>Nested list item</li>
+					<li>Nested list item</li>
+				</ol>
+			</li>
+			<li>List item</li>
+		</ol>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_horizontalList">chl2_horizontalList</h2>
+				
+		<!-- widget start -->
+		<ul class="chl2_horizontalList">
+			<li>List item one</li>
+			<li>List item two</li>
+			<li>List item three</li>
+			<li>List item four</li>
+			<li class="chl2_last">List item five</li>
+		</ul>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_inactive">chl2_inactive</h2>
+		<!-- widget start -->
+		<p><span class="chl2_inactive">This text is inactive.</span></p>
+		<!-- widget end -->
+		
+		<h1 id="a_pageLayoutStyles">Page layout styles</h1>
+				
+		<h2 id="a_chl2_page_2Column">chl2_page_2Column</h2>
+				
+		<div class="chl2_page_wrapper chl2_page_2Column">
+			<div class="chl2_page_column chl2_left">
+				This is the left column in a two column layout.
+				Any type of widget can be placed in here.
+			</div>
+			<div class="chl2_page_column chl2_right">
+				This is the right column in a two column layout.
+				By default column widths are equal.
+			</div>
+			<div class="chl2_clear"></div>
+		</div>
+				
+		<h1 id="a_linkStyles">Action Links</h1>
+				
+		<h2 id="a_chl2_add">chl2_add</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_add" href="#">Add</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_remove">chl2_remove</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_remove" href="#">Remove</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_activate">chl2_activate</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_activate" href="#">Activate</a>
+		<!-- widget end -->			
+
+		<h2 id="a_chl2_deactivate">chl2_deactivate</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_deactivate" href="#">Deactivate</a>
+		<!-- widget end -->		
+		
+		<h2 id="a_chl2_edit">chl2_edit</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_edit" href="#">Edit</a>
+		<!-- widget end -->		
+		
+		<h2 id="a_chl2_view">chl2_view</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_view" href="#">View</a>
+		<!-- widget end -->
+
+		<h2 id="a_chl2_sortUp">chl2_sortUp</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_sortUp" href="#">Sort up</a>
+		<!-- widget end -->
+				
+		<h2 id="a_chl2_sortDown">chl2_sortDown</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_sortDown" href="#">Sort down</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_expand">chl2_expand</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_expand" href="#">Expand</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_contract">chl2_contract</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_contract" href="#">Contract</a>
+		<!-- widget end -->
+
+		<h2 id="a_chl2_move">chl2_move</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_move" href="#">Move</a>
+		<!-- widget end -->	
+
+		<h2 id="a_chl2_copy">chl2_copy</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_copy" href="#">Copy</a>
+		<!-- widget end -->		
+	
+	
+		<h1>Target Types</h1>
+		
+		<h2 id="a_chl2_externalLink">chl2_externalLink</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_externalLink" href="#">External</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_fileLink">chl2_fileLink</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_fileLink" href="#">Download</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_downloadLink">chl2_downloadLink</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_downloadLink" href="#">Download</a>
+		<!-- widget end -->		
+		
+		<h2 id="a_chl2_rssLink">chl2_rssLink</h2>
+
+		<!-- widget start -->
+		<a class="chl2_rssLink" href="#">RSS</a>
+		<!-- widget end -->
+
+		<h1>Miscellaneous Links</h1>
+
+		<h2 id="a_chl2_next">chl2_next</h2>
+
+		<!-- widget start -->
+		<a class="chl2_next" href="#">Next</a>
+		<!-- widget end -->
+
+		<h2 id="a_chl2_previous">chl2_previous</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_previous" href="#">Previous</a>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_minorLink">chl2_minorLink</h2>
+		
+		<!-- widget start -->
+		<a class="chl2_minorLink" href="#">Minor Link</a>
+		<!-- widtet end -->
+				
+		<h2 id="a_chl2_nextInactive">chl2_nextInactive</h2>
+
+		<!-- widget start -->
+		<span class="chl2_nextInactive">Next</span>
+		<!-- widget end -->
+
+		<h2 id="a_chl2_previousInactive">chl2_previousInactive</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_previousInactive">Previous</span>
+		<!-- widget end -->
+		
+		<h1 id="a_appearanceModifiers">Appearance modifiers</h1>
+		
+		<h2 id="a_chl2_sticky">chl2_sticky</h2>
+		<div class="chl2_row chl2_sticky"><p>I'm a sticky row!</p></div>
+		
+		<h1 id="a_containers">Containers</h1>
+		
+		<h2 id="a_chl2_panel">chl2_panel</h2>
+
+		<!-- widget start -->
+		<div class="chl2_panel">
+			<div class="chl2_wrapper">
+				<div class="chl2_header"></div>
+				<div class="chl2_body">
+				This is a panel.
+				</div>
+				<div class="chl2_footer"></div>
+			</div>
+		</div>
+		<!-- widget end -->
+						
+		<h2 id="a_chl2_labelValueGroup_label_value">chl2_labelValueGroup, chl2_label and chl2_value</h2>
+				
+		<!-- widget starts -->
+		<table class="chl2_table chl2_labelValueGroup">
+			<tr>
+				<td class="chl2_label">Name:</td>
+				<td class="chl2_value">John Johnson</td>
+			</tr>
+			<tr>
+				<td class="chl2_label">Age:</td>
+				<td class="chl2_value">47</td>
+			</tr>
+			<tr class="chl2_last">
+				<td class="chl2_label">Role:</td>
+				<td class="chl2_value">Manager</td>
+			</tr>
+		</table>
+		<!-- widget ends -->
+		
+		<!-- widget starts -->
+		<ul class="chl2_labelValueGroup">
+			<li><span class="chl2_label">Name:</span> <span class="chl2_value">John Johnson</span></li>
+			<li><span class="chl2_label">Age:</span> <span class="chl2_value">47</span></li>
+			<li><span class="chl2_label">Role:</span> <span class="chl2_value">Manager</span></li>
+		</ul>
+		<!-- widget ends -->
+				
+		<h2 id="a_chl2_2Column_columnCollection">chl2_2Column and chl2_columnCollection</h2>
+				
+		<!-- widget start -->
+		<div class="chl2_rowCollection chl2_2Column">
+			<div class="chl2_row chl2_odd">
+				<div class="chl2_columnCollection">
+					<div class="chl2_left">
+						Yesterday
+					</div>
+					<div class="chl2_right">
+						Vivamus dictum sapien iaculis leo. Curabitur dui.
+						<br/>
+						Mauris nec ipsum et nisi porta tempus.
+						<br/>
+						Nam convallis porttitor ipsum.
+					</div>
+					<div class="chl2_clear"></div>
+				</div>
+			</div>
+			<div class="chl2_row chl2_even">
+				<div class="chl2_columnCollection">
+					<div class="chl2_left">
+						3 days ago
+					</div>
+					<div class="chl2_right">
+						In hac habitasse platea dictumst.
+						<br/>
+						Morbi varius ultricies risus.
+					</div>
+					<div class="chl2_clear"></div>
+				</div>
+			</div>
+			<div class="chl2_row chl2_odd">
+				<div class="chl2_columnCollection">
+					<div class="chl2_left">
+						5 days ago
+					</div>
+					<div class="chl2_right">
+						Morbi ultricies, risus quis porttitor sollicitudin, dolor sapien aliquet nulla, a consectetur eros ligula nec mi.
+						<br/>
+						Fusce molestie tempus orci.
+					</div>
+					<div class="chl2_clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h2>Using chl2_title with row collections</h2>
+		
+		<!-- widget start -->
+		<div class="chl2_rowCollection chl2_2Column chl2_title">
+			<div class="chl2_row">
+				<h2>User Name wrote four days ago...</h2>
+				<div class="chl2_columnCollection">
+					<div class="chl2_left">This is chl2_left in row one.</div>
+					<div class="chl2_right">
+						This is chl2_right in row one.
+						<br/>
+						There can be multiple lines of content in each row.
+					</div>
+					<div class="chl2_clear"></div>
+				</div>
+			</div>
+			<div class="chl2_row">
+				<h2>User Name wrote four days ago...</h2>
+				<div class="chl2_columnCollection">
+					<div class="chl2_left">This is chl2_left in row one.</div>
+					<div class="chl2_right">
+						This is chl2_right in row one.
+						<br/>
+						There can be multiple lines of content in each row.
+					</div>
+					<div class="chl2_clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_2ColumnList">chl2_2ColumnList</h2>
+				
+		<!-- widget starts -->
+		<div class="chl2_2ColumnList">
+			<div class="chl2_left">
+				This is the left column.
+				<br/>
+				Each column can have multiple lines.
+				<br/>
+				Use two loops to simulate data flowing from the left column to the right.
+			</div>
+			<div class="chl2_right">This is the right column.</div>
+			<div class="chl2_clear"></div>
+		</div>
+		<!-- widget ends -->
+		
+		<h1 id="a_tabularLayouts">Tabular layouts</h1>
+		
+		<h2 id="a_chl2_table">chl2_table</h2>
+						
+		<!-- widget starts -->
+		<table class="chl2_table">
+			<tr>
+				<th>Head One</th>
+				<th>Head Two</th>
+				<th class="chl2_last">Head Three</th>
+			</tr>
+			<tr class="chl2_odd">
+				<td>Row one, cell one</td>
+				<td>Row one, cell two</td>
+				<td class="chl2_last">Row one, cell three</td>
+			</tr>
+			<tr class="chl2_even">
+				<td>Row two, cell one</td>
+				<td>Row two, cell two</td>
+				<td class="chl2_last">Row two, cell three</td>
+			</tr>
+			<tr class="chl2_odd chl2_last">
+				<td>Row three, cell one</td>
+				<td>Row three, cell two</td>
+				<td class="chl2_last">Row three, cell three</td>
+			</tr>
+		</table>
+		<!-- widget ends -->
+		
+		<h1 id="a_paginatedData">Paginated data</h1>
+		
+		<h2 id="a_chl2_paginatedSet">chl2_paginatedSet</h2>
+			
+		<!-- widget starts -->
+		<div class="chl2_paginatedSet">
+			<div class="chl2_header">
+				<div class="chl2_left">
+					Showing results 1 to 10 of 16
+				</div>
+				<div class="chl2_right">
+					<div class="chl2_pagination">
+						<span class="chl2_previousInactive">Previous</span>
+						<span class="chl2_active">1</span> <a href="#">2</a> <a href="#">3</a>
+						<span><a class="chl2_next" href="#">Next</a></span>
+					</div>
+				</div>
+				<div class="chl2_clear"></div>
+			</div>
+			<div class="chl2_2ColumnList">
+				<div class="chl2_left">
+					This is result one
+					<br/>
+					This is result two
+					<br/>
+					This is result three
+					<br/>
+					This is result four
+					<br/>
+					This is result five
+				</div>
+				<div class="chl2_right">
+					This is result six
+					<br/>
+					This is result seven
+					<br/>
+					This is result eight
+					<br/>
+					This is result nine
+					<br/>
+					This is result ten
+				</div>
+				<div class="chl2_clear"></div>
+			</div>
+			<div class="chl2_footer">
+				<div class="chl2_pagination">
+					<span class="chl2_previousInactive">Previous</span>
+					<span class="chl2_active">1</span> <a href="#">2</a> <a href="#">3</a>
+					<span><a class="chl2_next" href="#">Next</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- widget ends -->
+		
+		<h1 id="a_tabSets">Tab Sets</h1>
+		
+		<h2 id="a_chl2_tabSet_tabList_tabBody">chl2_tabSet and chl2_tabList</h2>
+		
+		<!-- widget starts -->
+		<div class="chl2_tabSet">
+			<div class="chl2_tabList">
+				<ul>
+					<li class="chl2_active"><a href="#">Tab one</a></li>
+					<li><a href="#">Tab two</a></li>
+					<li><a href="#">Tab three</a></li>
+					<li class="chl2_last"><a href="#">Tab four</a></li>
+				</ul>
+				<div class="chl2_clear"></div>
+			</div>
+			<div class="chl2_tabHeader"></div>
+			<div class="chl2_tabBody">
+				This is the content.
+			</div>
+			<div class="chl2_tabFooter"></div>
+		</div>
+		<!-- widget ends -->
+		
+		<h1 id="a_textHighlighting">Highlighting</h1>
+		
+		<h2 id="a_chl2_new">chl2_new</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_new">New widget.</span>
+		<!-- widget end -->
+
+		<h2 id="a_chl2_warning">chl2_warning</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_warning">Warning widget.</span>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_error">chl2_error</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_error">Error widget.</span>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_success">chl2_success</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_success">Success widget.</span>
+		<!-- widget end -->
+		
+		<h2 id="a_chl2_information">chl2_information</h2>
+		
+		<!-- widget start -->
+		<span class="chl2_information">Information widget.</span>
+		<!-- widget end -->
+		
+		<p><span class="chl2_new">Etiam vel elit.</span> Nam odio est, congue sed, porttitor fringilla, porttitor non, eros. <span class="chl2_warning">Aenean id tortor.</span> Nullam rhoncus nulla vulputate nibh. Praesent id ligula. <span class="chl2_error">Curabitur semper.</span> Nam quis mi id libero condimentum faucibus. Sed nulla. <span class="chl2_success">Morbi ligula tortor.</span> Vestibulum tincidunt, ornare ut, scelerisque ac, augue. <span class="chl2_information">Nunc et sapien</span> sit amet orci interdum fringilla. Donec fringilla metus. Nunc dolor. Nunc tempor feugiat sapien. Duis sed diam.</p>
+		
+		<h1 id="a_alertsAndSystemMessages">Alerts and system messages</h1>
+				
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			System message widget.
+		</div>
+		<!-- widget end -->
+		
+		<h2>chl2_systemMessage chl2_warning</h2>
+		
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			<div class="chl2_warning">
+				<h2>Warning</h2>
+				Warning message.
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h2>chl2_systemMessage chl2_error</h2>
+		
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			<div class="chl2_error">
+				<h2>Error</h2>
+				Error message.
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h2>chl2_systemMessage chl2_success</h2>
+		
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			<div class="chl2_success">
+				<h2>Success</h2>
+				Success message.
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h2>chl2_systemMessage chl2_information</h2>
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			<div class="chl2_information">
+				<h2>Information</h2>
+				Information message.
+			</div>
+		</div>
+		<!-- widget end -->
+				
+		<!-- widget start -->
+		<div class="chl2_systemMessage">
+			<div class="chl2_success">
+				<h2>Success</h2>
+				<ul>
+					<li>List item one</li>
+					<li>List item two</li>
+					<li>List item three</li>
+					<li>List item four</li>
+				</ul>
+			</div>
+		</div>
+		<!-- widget end -->
+		
+		<h1 id="a_forms">Forms</h1>
+				
+		<h2 id="a_exampleForm">Example form</h2>
+		
+		<!-- example form -->
+		<form class="chl2_form" action="#">
+			<fieldset>
+				<legend>Form elements</legend>
+				
+				<!-- textbox -->
+				<div class="chl2_formItem">
+					<label>Textbox</label>
+					<span class="chl2_field">
+						<input class="chl2_textbox" type="text" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+
+				<!-- password -->
+				<div class="chl2_formItem">
+					<label>Password</label>
+					<span class="chl2_field">
+						<span class="chl2_helperText">
+							<input class="chl2_textbox chl2_password" type="password" />
+							<span>This is helper text. I could say, must be at least 6 characters.</span>
+						</span>
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<!-- textarea -->
+				<div class="chl2_formItem">
+					<label>Textarea</label>
+					<span class="chl2_field">
+						<textarea class="chl2_textarea"></textarea>
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<!-- select box -->
+				<div class="chl2_formItem">
+					<label>Select</label>
+					<span class="chl2_field">
+						<span class="chl2_helperText">
+							<select class="chl2_select">
+								<option>Option one</option>
+								<option>Option two</option>
+								<option>Option three</option>								
+							</select>
+							<span>I can have helper text too.</span>
+						</span>
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<!-- multiple select box -->
+				<div class="chl2_formItem">
+					<label>Multiple select</label>
+					<span class="chl2_field">
+						<select class="chl2_multipleSelect" multiple="multiple">    
+							<option value="one">Option one</option>
+							<option value="two">Option two</option>
+							<option value="three">Option three</option> 
+						</select>
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<!-- file upload -->
+				<div class="chl2_formItem">
+					<label>File upload</label>
+					<span class="chl2_field">
+						<input class="chl2_fileUpload" type="file" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+
+				<!-- radio button group -->
+				<div class="chl2_formItem">
+					<label>Radio button choice</label>
+					<span class="chl2_field">
+						<!-- radio button and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_radio" type="radio" />
+							<label>Radio button choice one</label>
+						</span>
+						
+						<!-- radio button and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_radio" type="radio" />
+							<label>Radio button choice two</label>
+						</span>
+						
+						<!-- radio button and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_radio" type="radio" />
+							<label>Radio button choice three</label>
+						</span>
+							
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<!-- checkbox group -->
+				<div class="chl2_formItem">
+					<label>Checkbox choice</label>
+					<span class="chl2_field">
+						<!-- checkbox and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_checkbox" type="checkbox" />
+							<label>Checkbox choice one</label>
+						</span>
+						
+						<!-- checkbox and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_checkbox" type="checkbox" />
+							<label>Checkbox choice two</label>
+						</span>
+						
+						<!-- checkbox and label -->
+						<span class="chl2_labelledField">
+							<input class="chl2_checkbox" type="checkbox" />
+							<label>Checkbox choice three</label>
+						</span>
+							
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+				<div class="chl2_formItem">
+					<label>Date value</label>
+					<span class="chl2_field">
+						<input class="chl2_textbox chl2_date" type="text" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				
+			</fieldset>
+		
+			<fieldset>
+				<legend>Your details</legend>
+				<div class="chl2_formItem">
+					<label>First name</label>
+					<span class="chl2_field">
+						<input class="chl2_textbox" type="text" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				<div class="chl2_formItem">
+					<label>Last name</label>
+					<span class="chl2_field">
+						<input class="chl2_textbox" type="text" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>More details</legend>
+				<div class="chl2_formItem chl2_required chl2_error">
+					<label>Field one <span>*</span></label>
+					<span class="chl2_field">
+						<input class="chl2_textbox" type="text" />
+					</span>
+					<div class="chl2_clear"></div>
+					<span class="chl2_validationMessage">Please enter field one.</span>
+				</div>
+				<div class="chl2_formItem chl2_required">
+					<label>Field two <span>*</span></label>
+					<span class="chl2_field">
+						<input class="chl2_textbox" type="text" value="Field two" />
+					</span>
+					<div class="chl2_clear"></div>
+				</div>
+				<div class="chl2_formItem chl2_required chl2_error">
+					<label>Field three <span>*</span></label>
+					<span class="chl2_field">
+						<textarea class="chl2_textarea"></textarea>
+					</span>
+					<div class="chl2_clear"></div>
+					<span class="chl2_validationMessage">
+						This is a longer validation message for field three.
+					</span>
+				</div>
+				<div class="chl2_formItem chl2_required">
+					<label>Date value <span>*</span></label>
+						<span class="chl2_field">
+							<select class="chl2_select"><option>25</option></select>
+							<select class="chl2_select"><option>May</option></select>
+							<select class="chl2_select"><option>1984</option></select>
+						</span>
+					<div class="chl2_clear"></div>
+				</div>
+			</fieldset>
+			<!-- button -->
+			<input class="chl2_button" type="submit" value="Button" />
+			<!-- minor button -->
+			<input class="chl2_minorButton" type="submit" value="Minor Button" />
+			<!-- major button -->
+			<input class="chl2_majorButton" type="submit" value="Major Button" />
+		</form>
+		<!-- example form ends -->
+		
+		<h1 id="a_widgets">Widgets</h1>
+				
+		<h2 id="a_chl2_w_subNode">chl2_w_subNode</h2>
+		
+		<!-- widget start -->
+		<div class="chl2_w_subNode">
+			<ul>
+				<li class="chl2_odd">
+					<a href="#">Link to subnode one</a>
+					<br/>
+					This is the summary text for subnode one.
+				</li>
+				<li class="chl2_even">
+					<a href="#">Link to subnode two</a>
+					<br/>
+					This is the summary text for subnode two.
+				</li>
+				<li class="chl2_odd">
+					<a href="#">Link to subnode three</a>
+					<br/>
+					This is the summary text for subnode three.
+				</li>
+				<li class="chl2_even chl2_last">
+					<a href="#">Link to subnode four</a>
+					<br/>
+					This is the summary text for subnode four.
+				</li>
+			</ul>
+		</div>
+		<!-- widget end -->
+				
+		<h2 id="a_chl2_w_sitemap">chl2_w_sitemap</h2>
+		
+		<!-- widget starts -->
+		<div class="chl2_w_sitemap">
+			<h2><a href="#">Top level node</a></h2>
+			<ul>
+				<li><a href="#">Sub-page</a></li>
+				
+				<li><a href="#">Sub-page</a> > 
+					<ul>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li><a href="#">Child of sub-page</a> | </li>					
+						<li class="chl2_last"><a href="#">Child of sub-page</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<h2><a href="#">Top level node</a></h2>
+			<ul>
+				<li><a href="#">Sub-page</a></li>
+				
+				<li><a href="#">Sub-page</a> > 
+					<ul>
+						<li><a href="#">Child of sub-page</a> | </li>
+						<li class="chl2_last"><a href="#">Child of sub-page</a></li>
+					</ul>
+				</li>	
+			</ul>
+		</div>
+		<!-- widget ends -->
+				
+		<!-- EXAMPLE CODE ENDS -->
+
+					
+			</div><!-- content ends -->
+			<div class="chl2_clear"></div>
+		</div> <!-- main ends -->
+		<div id="Footer">
+			<span>Copyright 2010 Datalink | <a href="#">Sitemap</a></span>
+		</div>
+	</div> <!-- page ends -->
+	
+	</body>
+</html>
